@@ -95,16 +95,18 @@ function createPerCatUseChart(ctx) {
                 label: "Healthcare",
                 backgroundColor: 'rgba(255, 255, 255, 0)',
                 borderColor: 'rgb(232, 141, 103)',
-                // pointBackgroundColor: 'rgb(255, 255, 255)',
-                data: [15, 14, 35, 29, 31, 8, 26, 6, 1, 23, 13, 18],
+                pointBackgroundColor: 'rgb(232, 141, 103)',
+                // data: [15, 14, 35, 29, 31, 8, 26, 6, 1, 23, 13, 18],
+                data: [15, 14, 20, 25, 33, 29, 26, 35, 33, 30, 28, 25],
             },
-            {
-                label: "Transport",
-                backgroundColor: 'rgba(255, 255, 255, 0)',
-                borderColor: 'rgb(173, 215, 246)',
-                // pointBackgroundColor: 'rgb(255, 255, 255)',
-                data: [17, 16, 35, 34, 31, 10, 28, 10, 10, 25, 17, 21],
-            },
+            // {
+            //     label: "Transport",
+            //     backgroundColor: 'rgba(255, 255, 255, 0)',
+            //     borderColor: 'rgb(173, 215, 246)',
+            //     // pointBackgroundColor: 'rgb(255, 255, 255)',
+            //     // data: [17, 16, 35, 34, 31, 10, 28, 10, 10, 25, 17, 21],
+            //     data: [10, 12, 18, 24, 31, 28, 24, 26, 30, 33, 29, 26],
+            // },
             // {
             //     label: "Education",
             //     backgroundColor: 'rgba(255, 255, 255, 0)',
@@ -119,26 +121,27 @@ function createPerCatUseChart(ctx) {
             //     // pointBackgroundColor: 'rgb(255, 255, 255)',
             //     data: [15, 14, 35, 29, 31, 8, 26, 6, 1, 23, 13, 18],
             // },
-            // {
-            //     label: "Apparels",
-            //     backgroundColor: 'rgba(255, 255, 255, 0)',
-            //     borderColor: 'rgb(7, 190, 184)',
-            //     // pointBackgroundColor: 'rgb(255, 255, 255)',
-            //     data: [15, 14, 35, 29, 31, 8, 26, 6, 1, 23, 13, 18],
-            // },
-            // {
-            //     label: "Groceries",
-            //     backgroundColor: 'rgba(255, 255, 255, 0)',
-            //     borderColor: 'rgb(194, 249, 112)',
-            //     // pointBackgroundColor: 'rgb(255, 255, 255)',
-            //     data: [15, 14, 35, 29, 31, 8, 26, 6, 1, 23, 13, 18],
-            // },
+            {
+                label: "Apparels",
+                backgroundColor: 'rgba(255, 255, 255, 0)',
+                borderColor: 'rgb(7, 190, 184)',
+                pointBackgroundColor: 'rgb(7, 190, 184)',
+                data: [4, 8, 5, 10, 14, 10, 16, 20, 15, 11, 9, 12],
+            },
+            {
+                label: "Groceries",
+                backgroundColor: 'rgba(255, 255, 255, 0)',
+                borderColor: 'rgb(194, 249, 112)',
+                pointBackgroundColor: 'rgb(194, 249, 112)',
+                data: [1, 6, 12, 19, 24, 22, 19, 25, 29, 22, 17, 20],
+            },
             {
                 label: "Electronics",
                 backgroundColor: 'rgba(255, 255, 255, 0)',
                 borderColor: 'rgb(238, 96, 85)',
-                // pointBackgroundColor: 'rgb(255, 255, 255)',
-                data: [15, 14, 35, 29, 31, 8, 26, 6, 1, 23, 13, 18],
+                pointBackgroundColor: 'rgb(238, 96, 85)',
+                // data: [5, 10, 27, 25, 28, 4, 20, 3, 10, 20, 10, 15],
+                data: [3, 8, 10, 15, 22, 19, 25, 27, 31, 25, 20, 22],
             }]
         },
 
@@ -162,6 +165,14 @@ function createPerCatUseChart(ctx) {
                     fontSize: 9
                 }
             },
+            tooltips: {
+                callbacks: {
+                    label: function (tooltipItem, data) {
+                        return data.datasets[tooltipItem.datasetIndex].label +': ' + tooltipItem.yLabel + '%';
+                    }
+                },
+                // enabled: false
+            },
             scales: {
                 yAxes: [{
                     // display: false,
@@ -174,7 +185,11 @@ function createPerCatUseChart(ctx) {
                         beginAtZero: true,
                         // fontColor: 'rgba(255, 255, 255, 0.7)',
                         padding: 10,
-                        display: false
+                        // Include a % sign in the ticks
+                        callback: function(value, index, values) {
+                            return value + '%';
+                        },
+                        // display: false
                     },
                 }],
                 xAxes: [{
