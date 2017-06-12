@@ -12,6 +12,8 @@ body {
     /*background-color: #ececec;*/
     /*background-color: #f1f2f7;*/
     /*height: 100%;*/
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
 }
@@ -105,8 +107,77 @@ input {
     position: absolute;
     width: 100%;
     height: 380px;
-    background-color: #E7E9ED;
+    background-color: #e7e9ed;
     overflow: hidden;
+}
+
+/**********************************/
+
+/************** Main **************/
+.main {
+    position: relative;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    background: #fff;
+    top: 120px;
+    padding: 40px 20px;
+}
+
+@media screen and (max-width: 767px) {
+    .main {
+        margin: 0 15px;
+    }
+}
+
+/* Header */
+.main-header {
+    text-align: center;
+}
+
+.main-header img {
+    /*display: block;*/
+    width: 115px;
+    /*margin: 0 auto;*/
+}
+
+.main-header h1 {
+    font-size: 44px;
+}
+
+.main-header p {
+    font-size: 14px;
+}
+
+/* Three Stats */
+.three-stats-wrapper {
+    margin-top: 40px;
+}
+
+.stat-card {
+    /*border: 1px solid rgba(0, 0, 0, 0.1);*/
+    border-top: 3px solid #76c2af;
+    /*border-bottom: 3px solid #76c2af;*/
+    -webkit-box-shadow: 12px 15px 20px 0 rgba(46,61,73,.15);
+    box-shadow: 12px 15px 20px 0 rgba(46,61,73,.15);
+    border-radius: 6px;
+    padding: 15px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.stat-card:hover {
+    -webkit-box-shadow: 2px 4px 8px 0 rgba(46,61,73,.2);
+    box-shadow: 2px 4px 8px 0 rgba(46,61,73,.2);
+}
+
+@media screen and (max-width: 767px) {
+    .three-stats-wrapper {
+        margin-top: 25px;
+    }
+
+    .stat-card {
+        margin-top: 25px;
+    }
 }
 
 /**********************************/
