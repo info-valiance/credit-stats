@@ -121,6 +121,7 @@ input {
     background: #fff;
     top: 120px;
     padding: 40px 20px;
+    border-radius: 2px;
 }
 
 @media screen and (max-width: 767px) {
@@ -178,6 +179,16 @@ input {
     .stat-card {
         margin-top: 25px;
     }
+}
+
+/* Graph Sections */
+.section {
+    margin-top: 40px;
+}
+
+.graph-head {
+    font-size: 17px;
+    font-weight: bold;
 }
 
 /**********************************/
