@@ -2,6 +2,10 @@ $(document).ready(function () {
     // Background Bar Chart canvas
     var bgBarCtx = document.getElementById("background-bar-chart");
     createbgBarChart(bgBarCtx);
+
+    // % usage every month in different categories line chart
+    var perCatUse = document.getElementById("perCatLineChart");
+    createPerCatUseChart(perCatUse);
 });
 
 // Create Line chart for Total Views
@@ -68,6 +72,117 @@ function createbgBarChart(ctx) {
                         display: false
                     },
                     display: false
+                }]
+            }
+        }
+    });
+}
+
+// Create Line chart for % usage per month category wise
+function createPerCatUseChart(ctx) {
+    var chart = new Chart(ctx, {
+        // The type of chart we want to create
+        type: 'line',
+
+        // The data for our dataset
+        data: {
+            labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+            datasets: [{
+                label: "Healthcare",
+                backgroundColor: 'rgba(255, 255, 255, 0)',
+                borderColor: 'rgb(232, 141, 103)',
+                // pointBackgroundColor: 'rgb(255, 255, 255)',
+                data: [15, 14, 35, 29, 31, 8, 26, 6, 1, 23, 13, 18],
+            },
+            {
+                label: "Transport",
+                backgroundColor: 'rgba(255, 255, 255, 0)',
+                borderColor: 'rgb(173, 215, 246)',
+                // pointBackgroundColor: 'rgb(255, 255, 255)',
+                data: [17, 16, 35, 34, 31, 10, 28, 10, 10, 25, 17, 21],
+            },
+            // {
+            //     label: "Education",
+            //     backgroundColor: 'rgba(255, 255, 255, 0)',
+            //     borderColor: 'rgb(141, 106, 159)',
+            //     // pointBackgroundColor: 'rgb(255, 255, 255)',
+            //     data: [15, 14, 35, 29, 31, 8, 26, 6, 1, 23, 13, 18],
+            // },
+            // {
+            //     label: "Entertainment",
+            //     backgroundColor: 'rgba(255, 255, 255, 0)',
+            //     borderColor: 'rgb(8, 146, 165)',
+            //     // pointBackgroundColor: 'rgb(255, 255, 255)',
+            //     data: [15, 14, 35, 29, 31, 8, 26, 6, 1, 23, 13, 18],
+            // },
+            // {
+            //     label: "Apparels",
+            //     backgroundColor: 'rgba(255, 255, 255, 0)',
+            //     borderColor: 'rgb(7, 190, 184)',
+            //     // pointBackgroundColor: 'rgb(255, 255, 255)',
+            //     data: [15, 14, 35, 29, 31, 8, 26, 6, 1, 23, 13, 18],
+            // },
+            // {
+            //     label: "Groceries",
+            //     backgroundColor: 'rgba(255, 255, 255, 0)',
+            //     borderColor: 'rgb(194, 249, 112)',
+            //     // pointBackgroundColor: 'rgb(255, 255, 255)',
+            //     data: [15, 14, 35, 29, 31, 8, 26, 6, 1, 23, 13, 18],
+            // },
+            {
+                label: "Electronics",
+                backgroundColor: 'rgba(255, 255, 255, 0)',
+                borderColor: 'rgb(238, 96, 85)',
+                // pointBackgroundColor: 'rgb(255, 255, 255)',
+                data: [15, 14, 35, 29, 31, 8, 26, 6, 1, 23, 13, 18],
+            }]
+        },
+
+        // Configuration options go here
+        options: {
+            responsive: true,
+            // maintainAspectRatio: false,
+            responsiveAnimationDuration: 400,  // in ms
+            title: {
+                text: 'Percent Usage',
+                display: true,
+                // fontColor: '#fff',
+                fontStyle: 'normal'
+            },
+            legend: {
+                display: true,
+                position: 'top',
+                labels: {
+                    boxWidth: 10,
+                    // usePointStyle: true,
+                    fontSize: 9
+                }
+            },
+            scales: {
+                yAxes: [{
+                    // display: false,
+                    gridLines: {
+                        color: 'rgba(255, 255, 255, 0.3)',
+                        lineWidth: 2,
+                        drawBorder: false
+                    },
+                    ticks: {
+                        beginAtZero: true,
+                        // fontColor: 'rgba(255, 255, 255, 0.7)',
+                        padding: 10,
+                        display: false
+                    },
+                }],
+                xAxes: [{
+                    gridLines: {
+                        // color: 'rgba(255, 255, 255, 0.3)',
+                        lineWidth: 2,
+                        drawBorder: false
+                    },
+                    ticks: {
+                        // display: false
+                    },
+                    // display: false
                 }]
             }
         }

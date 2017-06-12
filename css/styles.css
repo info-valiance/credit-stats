@@ -191,4 +191,8 @@ input {
     font-weight: bold;
 }
 
+.graph-row {
+    margin-top: 40px;
+}
+
 /**********************************/
