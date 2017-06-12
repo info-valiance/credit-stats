@@ -32,7 +32,11 @@ function createbgBarChart(ctx) {
         options: {
             responsive: true,
             maintainAspectRatio: false,
-            responsiveAnimationDuration: 400,  // in ms
+            // responsiveAnimationDuration: 400,  // in ms
+            animation: {
+                duration: 700,
+                easing: 'easeInQuint'
+            },
             title: {
                 text: 'Data',
                 display: false,
