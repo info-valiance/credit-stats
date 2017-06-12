@@ -189,7 +189,7 @@ function createPerCatUseChart(ctx) {
                         callback: function(value, index, values) {
                             return value + '%';
                         },
-                        // display: false
+                        display: false
                     },
                 }],
                 xAxes: [{
