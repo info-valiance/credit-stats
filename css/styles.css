@@ -1,0 +1,99 @@
+/************ Global ************/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    /*background-color: #ececec;*/
+    /*background-color: #f1f2f7;*/
+    /*height: 100%;*/
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+html,
+body {
+  /*height: 100%;*/
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.form-input:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-color: #ccc;
+}
+
+input {
+    outline: none;
+}
+
+/*::-moz-selection {
+    background: #fbb333;
+    color: #fff;
+}
+
+::selection {
+    background: #fbb333;
+    color: #fff;
+}*/
+
+/**********************************/
+
+/************* Navbar *************/
+.navbar {
+    background: #222d31;
+    height: 50px;
+    margin-bottom: 0;
+    -webkit-box-shadow: 0 1px 11px 1px #c7c7c7;
+    box-shadow: 0 1px 11px 1px #c7c7c7;
+}
+
+.navbar-name {
+    display: inline-block;
+    height: 49px;
+    padding: 15px;
+    background: #2578aa;
+    color: #fff;
+}
+
+/*.navbar-brand {
+    padding-left: 65px;
+    font-size: 16px;
+    background: #2578aa;
+}
+
+.navbar-default .navbar-brand {
+    color: #fff;
+}*/
+
+@media screen and (max-width: 767px) {
+    .navbar-header {
+        display: inline-block;
+    }
+}
+
+/**********************************/
