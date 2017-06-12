@@ -130,6 +130,44 @@ input {
     }
 }
 
+.fade-in-up {
+    opacity: 0;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: 700ms;
+    animation-duration: 700ms;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-name: fade-in-up;
+    animation-name: fade-in-up;
+}
+
+@-webkit-keyframes fade-in-up {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(100px) rotate3d(0, 0, 1, 18deg);
+        transform: translateY(100px) rotate3d(0, 0, 1, 18deg);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fade-in-up {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(100px) rotate3d(0, 0, 1, 8deg);
+        transform: translateY(100px) rotate3d(0, 0, 1, 8deg);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
 /* Header */
 .main-header {
     text-align: center;
