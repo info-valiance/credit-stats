@@ -6,6 +6,10 @@ $(document).ready(function () {
     // % usage every month in different categories line chart
     var perCatUse = document.getElementById("perCatLineChart");
     createPerCatUseChart(perCatUse);
+
+    // Total usage every month in different categories line chart
+    var totCatUse = document.getElementById("totCatLineChart");
+    createTotCatUseChart(totCatUse);
 });
 
 // Create Line chart for Total Views
@@ -190,6 +194,132 @@ function createPerCatUseChart(ctx) {
                             return value + '%';
                         },
                         display: false
+                    },
+                }],
+                xAxes: [{
+                    gridLines: {
+                        // color: 'rgba(255, 255, 255, 0.3)',
+                        lineWidth: 2,
+                        drawBorder: false
+                    },
+                    ticks: {
+                        // display: false
+                    },
+                    // display: false
+                }]
+            }
+        }
+    });
+}
+
+// Create Line chart for total usage per month category wise
+function createTotCatUseChart(ctx) {
+    var chart = new Chart(ctx, {
+        // The type of chart we want to create
+        type: 'line',
+
+        // The data for our dataset
+        data: {
+            labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+            datasets: [{
+                label: "Healthcare",
+                backgroundColor: 'rgba(255, 255, 255, 0)',
+                borderColor: 'rgb(232, 141, 103)',
+                pointBackgroundColor: 'rgb(232, 141, 103)',
+                // data: [15, 14, 35, 29, 31, 8, 26, 6, 1, 23, 13, 18],
+                data: [15, 14, 20, 25, 33, 29, 26, 35, 33, 30, 28, 25],
+            },
+            // {
+            //     label: "Transport",
+            //     backgroundColor: 'rgba(255, 255, 255, 0)',
+            //     borderColor: 'rgb(173, 215, 246)',
+            //     // pointBackgroundColor: 'rgb(255, 255, 255)',
+            //     // data: [17, 16, 35, 34, 31, 10, 28, 10, 10, 25, 17, 21],
+            //     data: [10, 12, 18, 24, 31, 28, 24, 26, 30, 33, 29, 26],
+            // },
+            // {
+            //     label: "Education",
+            //     backgroundColor: 'rgba(255, 255, 255, 0)',
+            //     borderColor: 'rgb(141, 106, 159)',
+            //     // pointBackgroundColor: 'rgb(255, 255, 255)',
+            //     data: [15, 14, 35, 29, 31, 8, 26, 6, 1, 23, 13, 18],
+            // },
+            // {
+            //     label: "Entertainment",
+            //     backgroundColor: 'rgba(255, 255, 255, 0)',
+            //     borderColor: 'rgb(8, 146, 165)',
+            //     // pointBackgroundColor: 'rgb(255, 255, 255)',
+            //     data: [15, 14, 35, 29, 31, 8, 26, 6, 1, 23, 13, 18],
+            // },
+            {
+                label: "Apparels",
+                backgroundColor: 'rgba(255, 255, 255, 0)',
+                borderColor: 'rgb(7, 190, 184)',
+                pointBackgroundColor: 'rgb(7, 190, 184)',
+                data: [4, 8, 5, 10, 14, 10, 16, 20, 15, 11, 9, 12],
+            },
+            {
+                label: "Groceries",
+                backgroundColor: 'rgba(255, 255, 255, 0)',
+                borderColor: 'rgb(194, 249, 112)',
+                pointBackgroundColor: 'rgb(194, 249, 112)',
+                data: [1, 6, 12, 19, 24, 22, 19, 25, 29, 22, 17, 20],
+            },
+            {
+                label: "Electronics",
+                backgroundColor: 'rgba(255, 255, 255, 0)',
+                borderColor: 'rgb(238, 96, 85)',
+                pointBackgroundColor: 'rgb(238, 96, 85)',
+                // data: [5, 10, 27, 25, 28, 4, 20, 3, 10, 20, 10, 15],
+                data: [3, 8, 10, 15, 22, 19, 25, 27, 31, 25, 20, 22],
+            }]
+        },
+
+        // Configuration options go here
+        options: {
+            responsive: true,
+            // maintainAspectRatio: false,
+            responsiveAnimationDuration: 400,  // in ms
+            title: {
+                text: 'Total Usage',
+                display: true,
+                // fontColor: '#fff',
+                fontStyle: 'normal'
+            },
+            legend: {
+                display: true,
+                position: 'top',
+                labels: {
+                    boxWidth: 10,
+                    // usePointStyle: true,
+                    fontSize: 9
+                }
+            },
+            tooltips: {
+                // callbacks: {
+                //     label: function (tooltipItem, data) {
+                //         return data.datasets[tooltipItem.datasetIndex].label +': ' + tooltipItem.yLabel + '%';
+                //     }
+                // },
+                // enabled: false
+            },
+            scales: {
+                yAxes: [{
+                    // display: false,
+                    gridLines: {
+                        color: 'rgba(255, 255, 255, 0.3)',
+                        lineWidth: 2,
+                        drawBorder: false
+                    },
+                    ticks: {
+                        beginAtZero: true,
+                        // fontColor: 'rgba(255, 255, 255, 0.7)',
+                        padding: 10,
+                        // // Include a % sign in the ticks
+                        // callback: function(value, index, values) {
+                        //     return value + '%';
+                        // },
+                        // display: false
                     },
                 }],
                 xAxes: [{
