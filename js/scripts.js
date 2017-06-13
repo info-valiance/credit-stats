@@ -514,7 +514,7 @@ function createAppCatBarChart(ctx) {
 
         // The data for our dataset
         data: {
-            labels: ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'],
+            labels: ['Mon','Tue','Wed','Thu','Fri','Sat','Sun'],
             datasets: [{
                 label: '8pm - 2am',
                 data: [450, 400, 450, 900, 1700, 1450, 1250],
@@ -566,6 +566,11 @@ function createAppCatBarChart(ctx) {
             },
             legend: {
                 // display: false
+                labels: {
+                    boxWidth: 10,
+                    // usePointStyle: true,
+                    fontSize: 11
+                }
             },
             tooltips: {
                 // callbacks: {
@@ -616,7 +621,7 @@ function createGroCatBarChart(ctx) {
 
         // The data for our dataset
         data: {
-            labels: ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'],
+            labels: ['Mon','Tue','Wed','Thu','Fri','Sat','Sun'],
             datasets: [{
                 label: '8pm - 2am',
                 data: [105, 100, 100, 95, 90, 45, 30],
@@ -668,6 +673,11 @@ function createGroCatBarChart(ctx) {
             },
             legend: {
                 // display: false
+                labels: {
+                    boxWidth: 10,
+                    // usePointStyle: true,
+                    fontSize: 11
+                }
             },
             tooltips: {
                 // callbacks: {
