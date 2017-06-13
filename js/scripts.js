@@ -367,17 +367,25 @@ function createAppCatUseChart(ctx) {
             maintainAspectRatio: false,
             responsiveAnimationDuration: 400,  // in ms
             title: {
-                text: 'Top 3 Most Viewed Category',
+                text: 'Merchant Selection for Apparels',
                 display: true,
-                fontColor: '#fff',
-                fontStyle: 'normal'
+                // fontColor: '#fff',
+                fontStyle: 'normal',
             },
             legend: {
                 // display: false
-                position: 'left',
+                position: 'top',
                 labels: {
                     // boxWidth: 20
                 }
+            },
+            tooltips: {
+                callbacks: {
+                    label: function (tooltipItem, data) {
+                        return data.labels[tooltipItem.index] +': ' + data.datasets[0].data[tooltipItem.index] + '%';
+                    }
+                },
+                // enabled: false
             },
             scales: {
                 yAxes: [{
