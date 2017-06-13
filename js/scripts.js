@@ -18,6 +18,10 @@ $(document).ready(function () {
     // Transaction distribution by merchants for groceries pie chart
     var groCatDis = document.getElementById("groCatPieChart");
     createGroCatUseChart(groCatDis);
+
+    // Transaction distribution in a particular day time across apparels
+    var appCatBar = document.getElementById("appCatBarChart");
+    createAppCatBarChart(appCatBar);
 });
 
 // Create Line chart for Total Views
@@ -492,6 +496,109 @@ function createGroCatUseChart(ctx) {
                         display: false
                     },
                     display: false
+                }]
+            }
+        }
+    });
+}
+
+
+// Transaction distribution in a particular day time across apparels
+function createAppCatBarChart(ctx) {
+    var chart = new Chart(ctx, {
+        // The type of chart we want to create
+        type: 'bar',
+
+        // The data for our dataset
+        data: {
+            labels: ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'],
+            datasets: [{
+                label: '8pm - 2am',
+                data: [450, 400, 450, 900, 1700, 1450, 1250],
+                backgroundColor: 'rgb(8, 146, 165)',
+                borderColor: 'rgba(8, 146, 165, 0)',
+                // hoverBackgroundColor: 'rgba(210, 210, 210, 1)',
+                // hoverBorderColor: 'rgba(210, 210, 210, 1)',
+                borderWidth: 0
+            },
+            {
+                label: '2am - 8am',
+                data: [100, 70, 70, 430, 600, 550, 200],
+                backgroundColor: 'rgb(232, 141, 103)',
+                borderColor: 'rgba(232, 141, 103, 0)',
+                // hoverBackgroundColor: 'rgba(210, 210, 210, 1)',
+                // hoverBorderColor: 'rgba(210, 210, 210, 1)',
+                borderWidth: 0
+            },
+            {
+                label: '8am - 2pm',
+                data: [100, 80, 120, 200, 400, 600, 550],
+                backgroundColor: 'rgb(7, 190, 184)',
+                borderColor: 'rgba(7, 190, 184, 0)',
+                // hoverBackgroundColor: 'rgba(210, 210, 210, 1)',
+                // hoverBorderColor: 'rgba(210, 210, 210, 1)',
+                borderWidth: 0
+            },
+            {
+                label: '2pm - 8pm',
+                data: [550, 700, 650, 700, 1400, 1550, 1200],
+                backgroundColor: 'rgb(141, 106, 159)',
+                borderColor: 'rgba(141, 106, 159, 0)',
+                // hoverBackgroundColor: 'rgba(210, 210, 210, 1)',
+                // hoverBorderColor: 'rgba(210, 210, 210, 1)',
+                borderWidth: 0
+            }]
+        },
+
+        // Configuration options go here
+        options: {
+            responsive: true,
+            // maintainAspectRatio: false,
+            // responsiveAnimationDuration: 400,  // in ms
+            title: {
+                text: 'Transaction for Apparels',
+                display: true,
+                // fontColor: '#fff',
+                fontStyle: 'normal'
+            },
+            legend: {
+                // display: false
+            },
+            tooltips: {
+                // callbacks: {
+                //     beforeTitle: function (tooltipItem, data) {
+                //         return 'Apparels';
+                //     }
+                // },
+                // enabled: false
+            },
+            scales: {
+                yAxes: [{
+                    // display: false,
+                    stacked: true,
+                    gridLines: {
+                        color: 'rgba(255, 255, 255, 0.3)',
+                        lineWidth: 2,
+                        drawBorder: false
+                    },
+                    ticks: {
+                        beginAtZero: true,
+                        // fontColor: 'rgba(255, 255, 255, 0.7)',
+                        padding: 10
+                    },
+                    // display: false
+                }],
+                xAxes: [{
+                    stacked: true,
+                    gridLines: {
+                        color: 'rgba(255, 255, 255, 0.3)',
+                        lineWidth: 2,
+                        drawBorder: false
+                    },
+                    ticks: {
+                        // display: false
+                    },
+                    // display: false
                 }]
             }
         }
