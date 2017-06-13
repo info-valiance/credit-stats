@@ -304,4 +304,14 @@ input {
     border-bottom: 0;
 }
 
+.max-spend {
+    font-weight: bold;
+    color: rgb(232, 141, 103);
+}
+
+.min-spend {
+    font-weight: bold;
+    color: rgb(173, 215, 246);
+}
+
 /**********************************/
