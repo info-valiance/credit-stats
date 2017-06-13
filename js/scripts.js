@@ -11,9 +11,13 @@ $(document).ready(function () {
     var totCatUse = document.getElementById("totCatLineChart");
     createTotCatUseChart(totCatUse);
 
-    // Transaction distribution by merchants across apparels pie chart
+    // Transaction distribution by merchants for apparels pie chart
     var appCatDis = document.getElementById("appCatPieChart");
     createAppCatUseChart(appCatDis);
+
+    // Transaction distribution by merchants for groceries pie chart
+    var groCatDis = document.getElementById("groCatPieChart");
+    createGroCatUseChart(groCatDis);
 });
 
 // Create Line chart for Total Views
@@ -342,7 +346,7 @@ function createTotCatUseChart(ctx) {
     });
 }
 
-// Create Pie chart for merhcant distribution across Apparels
+// Create Pie chart for merhcant distribution for Apparels
 function createAppCatUseChart(ctx) {
     var chart = new Chart(ctx, {
         // The type of chart we want to create
@@ -368,6 +372,82 @@ function createAppCatUseChart(ctx) {
             responsiveAnimationDuration: 400,  // in ms
             title: {
                 text: 'Merchant Selection for Apparels',
+                display: true,
+                // fontColor: '#fff',
+                fontStyle: 'normal',
+            },
+            legend: {
+                // display: false
+                position: 'top',
+                labels: {
+                    // boxWidth: 20
+                }
+            },
+            tooltips: {
+                callbacks: {
+                    label: function (tooltipItem, data) {
+                        return data.labels[tooltipItem.index] +': ' + data.datasets[0].data[tooltipItem.index] + '%';
+                    }
+                },
+                // enabled: false
+            },
+            scales: {
+                yAxes: [{
+                    // display: false,
+                    gridLines: {
+                        color: 'rgba(255, 255, 255, 0.3)',
+                        lineWidth: 2,
+                        drawBorder: false,
+                        display: false
+                    },
+                    ticks: {
+                        display: false,
+                        suggestedMax: 75
+                    },
+                }],
+                xAxes: [{
+                    gridLines: {
+                        color: 'rgba(255, 255, 255, 0.3)',
+                        lineWidth: 2,
+                        drawBorder: false,
+                        display: false
+                    },
+                    ticks: {
+                        display: false
+                    },
+                    display: false
+                }]
+            }
+        }
+    });
+}
+
+// Create Pie chart for merhcant distribution for Groceries
+function createGroCatUseChart(ctx) {
+    var chart = new Chart(ctx, {
+        // The type of chart we want to create
+        type: 'doughnut',
+
+        // The data for our dataset
+        data: {
+            labels: ["BigBasket", "Grofers", "Amazon", "Spencers", "RelianceSmart", "Rest"],
+            datasets: [{
+                label: "Transactions",
+                backgroundColor: ['rgb(173, 215, 246)', 'rgb(238, 96, 85)', 'rgb(141, 106, 159)', 'rgb(194, 249, 112)', 'rgb(7, 190, 184)', 'rgb(232, 141, 103)'],
+                borderColor: '#fff',
+                borderWidth: 1,
+                lineTension: 0,
+                data: [32, 30, 20, 9, 6, 3],
+            }]
+        },
+
+        // Configuration options go here
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            responsiveAnimationDuration: 400,  // in ms
+            title: {
+                text: 'Merchant Selection for Groceries',
                 display: true,
                 // fontColor: '#fff',
                 fontStyle: 'normal',
