@@ -22,6 +22,10 @@ $(document).ready(function () {
     // Transaction distribution in a particular day time across apparels
     var appCatBar = document.getElementById("appCatBarChart");
     createAppCatBarChart(appCatBar);
+
+    // Transaction distribution in a particular day time across gorceries
+    var appCatBar = document.getElementById("groCatBarChart");
+    createGroCatBarChart(appCatBar);
 });
 
 // Create Line chart for Total Views
@@ -502,7 +506,6 @@ function createGroCatUseChart(ctx) {
     });
 }
 
-
 // Transaction distribution in a particular day time across apparels
 function createAppCatBarChart(ctx) {
     var chart = new Chart(ctx, {
@@ -556,7 +559,109 @@ function createAppCatBarChart(ctx) {
             // maintainAspectRatio: false,
             // responsiveAnimationDuration: 400,  // in ms
             title: {
-                text: 'Transaction for Apparels',
+                text: 'Transactions for Apparels',
+                display: true,
+                // fontColor: '#fff',
+                fontStyle: 'normal'
+            },
+            legend: {
+                // display: false
+            },
+            tooltips: {
+                // callbacks: {
+                //     beforeTitle: function (tooltipItem, data) {
+                //         return 'Apparels';
+                //     }
+                // },
+                // enabled: false
+            },
+            scales: {
+                yAxes: [{
+                    // display: false,
+                    stacked: true,
+                    gridLines: {
+                        color: 'rgba(255, 255, 255, 0.3)',
+                        lineWidth: 2,
+                        drawBorder: false
+                    },
+                    ticks: {
+                        beginAtZero: true,
+                        // fontColor: 'rgba(255, 255, 255, 0.7)',
+                        padding: 10
+                    },
+                    // display: false
+                }],
+                xAxes: [{
+                    stacked: true,
+                    gridLines: {
+                        color: 'rgba(255, 255, 255, 0.3)',
+                        lineWidth: 2,
+                        drawBorder: false
+                    },
+                    ticks: {
+                        // display: false
+                    },
+                    // display: false
+                }]
+            }
+        }
+    });
+}
+
+// Transaction distribution in a particular day time across groceries
+function createGroCatBarChart(ctx) {
+    var chart = new Chart(ctx, {
+        // The type of chart we want to create
+        type: 'bar',
+
+        // The data for our dataset
+        data: {
+            labels: ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'],
+            datasets: [{
+                label: '8pm - 2am',
+                data: [105, 100, 100, 95, 90, 45, 30],
+                backgroundColor: 'rgb(8, 146, 165)',
+                borderColor: 'rgba(8, 146, 165, 0)',
+                // hoverBackgroundColor: 'rgba(210, 210, 210, 1)',
+                // hoverBorderColor: 'rgba(210, 210, 210, 1)',
+                borderWidth: 0
+            },
+            {
+                label: '2am - 8am',
+                data: [8, 6, 9, 8, 18, 20, 10],
+                backgroundColor: 'rgb(232, 141, 103)',
+                borderColor: 'rgba(232, 141, 103, 0)',
+                // hoverBackgroundColor: 'rgba(210, 210, 210, 1)',
+                // hoverBorderColor: 'rgba(210, 210, 210, 1)',
+                borderWidth: 0
+            },
+            {
+                label: '8am - 2pm',
+                data: [70, 65, 70, 60, 55, 25, 28],
+                backgroundColor: 'rgb(7, 190, 184)',
+                borderColor: 'rgba(7, 190, 184, 0)',
+                // hoverBackgroundColor: 'rgba(210, 210, 210, 1)',
+                // hoverBorderColor: 'rgba(210, 210, 210, 1)',
+                borderWidth: 0
+            },
+            {
+                label: '2pm - 8pm',
+                data: [120, 110, 115, 90, 70, 75, 60],
+                backgroundColor: 'rgb(141, 106, 159)',
+                borderColor: 'rgba(141, 106, 159, 0)',
+                // hoverBackgroundColor: 'rgba(210, 210, 210, 1)',
+                // hoverBorderColor: 'rgba(210, 210, 210, 1)',
+                borderWidth: 0
+            }]
+        },
+
+        // Configuration options go here
+        options: {
+            responsive: true,
+            // maintainAspectRatio: false,
+            // responsiveAnimationDuration: 400,  // in ms
+            title: {
+                text: 'Transactions for Groceries',
                 display: true,
                 // fontColor: '#fff',
                 fontStyle: 'normal'
