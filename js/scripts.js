@@ -10,6 +10,10 @@ $(document).ready(function () {
     // Total usage every month in different categories line chart
     var totCatUse = document.getElementById("totCatLineChart");
     createTotCatUseChart(totCatUse);
+
+    // Transaction distribution by merchants across apparels pie chart
+    var appCatDis = document.getElementById("appCatPieChart");
+    createAppCatUseChart(appCatDis);
 });
 
 // Create Line chart for Total Views
@@ -224,8 +228,8 @@ function createTotCatUseChart(ctx) {
             datasets: [{
                 label: "Healthcare",
                 backgroundColor: 'rgba(255, 255, 255, 0)',
-                borderColor: 'rgb(232, 141, 103)',
-                pointBackgroundColor: 'rgb(232, 141, 103)',
+                borderColor: 'rgb(173, 215, 246)',
+                pointBackgroundColor: 'rgb(173, 215, 246)',
                 // data: [15, 14, 35, 29, 31, 8, 26, 6, 1, 23, 13, 18],
                 data: [15, 14, 20, 25, 33, 29, 26, 35, 33, 30, 28, 25],
             },
@@ -254,22 +258,22 @@ function createTotCatUseChart(ctx) {
             {
                 label: "Apparels",
                 backgroundColor: 'rgba(255, 255, 255, 0)',
-                borderColor: 'rgb(7, 190, 184)',
-                pointBackgroundColor: 'rgb(7, 190, 184)',
+                borderColor: 'rgb(232, 141, 103)',
+                pointBackgroundColor: 'rgb(232, 141, 103)',
                 data: [4, 8, 5, 10, 14, 10, 16, 20, 15, 11, 9, 12],
             },
             {
                 label: "Groceries",
                 backgroundColor: 'rgba(255, 255, 255, 0)',
-                borderColor: 'rgb(194, 249, 112)',
-                pointBackgroundColor: 'rgb(194, 249, 112)',
+                borderColor: 'rgb(118, 194, 175)',
+                pointBackgroundColor: 'rgb(118, 194, 175)',
                 data: [1, 6, 12, 19, 24, 22, 19, 25, 29, 22, 17, 20],
             },
             {
                 label: "Electronics",
                 backgroundColor: 'rgba(255, 255, 255, 0)',
-                borderColor: 'rgb(238, 96, 85)',
-                pointBackgroundColor: 'rgb(238, 96, 85)',
+                borderColor: 'rgb(141, 106, 159)',
+                pointBackgroundColor: 'rgb(141, 106, 159)',
                 // data: [5, 10, 27, 25, 28, 4, 20, 3, 10, 20, 10, 15],
                 data: [3, 8, 10, 15, 22, 19, 25, 27, 31, 25, 20, 22],
             }]
@@ -332,6 +336,74 @@ function createTotCatUseChart(ctx) {
                         // display: false
                     },
                     // display: false
+                }]
+            }
+        }
+    });
+}
+
+// Create Pie chart for merhcant distribution across Apparels
+function createAppCatUseChart(ctx) {
+    var chart = new Chart(ctx, {
+        // The type of chart we want to create
+        type: 'doughnut',
+
+        // The data for our dataset
+        data: {
+            labels: ["Flipkart", "Amazon", "Snapdeal", "Ebay", "Myntra", "Jabong", "Shopclues", "Rest"],
+            datasets: [{
+                label: "Transactions",
+                backgroundColor: ['rgb(118, 194, 175)', 'rgb(141, 106, 159)', 'rgb(8, 146, 165)', 'rgb(194, 249, 112)', 'rgb(7, 190, 184)', 'rgb(238, 96, 85)', 'rgb(173, 215, 246)', 'rgb(232, 141, 103)'],
+                borderColor: '#fff',
+                borderWidth: 1,
+                lineTension: 0,
+                data: [22, 20, 14, 12, 9, 8, 6, 9],
+            }]
+        },
+
+        // Configuration options go here
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            responsiveAnimationDuration: 400,  // in ms
+            title: {
+                text: 'Top 3 Most Viewed Category',
+                display: true,
+                fontColor: '#fff',
+                fontStyle: 'normal'
+            },
+            legend: {
+                // display: false
+                position: 'left',
+                labels: {
+                    // boxWidth: 20
+                }
+            },
+            scales: {
+                yAxes: [{
+                    // display: false,
+                    gridLines: {
+                        color: 'rgba(255, 255, 255, 0.3)',
+                        lineWidth: 2,
+                        drawBorder: false,
+                        display: false
+                    },
+                    ticks: {
+                        display: false,
+                        suggestedMax: 75
+                    },
+                }],
+                xAxes: [{
+                    gridLines: {
+                        color: 'rgba(255, 255, 255, 0.3)',
+                        lineWidth: 2,
+                        drawBorder: false,
+                        display: false
+                    },
+                    ticks: {
+                        display: false
+                    },
+                    display: false
                 }]
             }
         }
