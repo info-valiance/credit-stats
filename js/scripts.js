@@ -100,6 +100,16 @@ function createbgBarChart(ctx) {
             }
         }
     });
+
+    setInterval(function() {
+        // console.log(chart.data.datasets[0].data);
+        for (var i = 0; i < 7; i++) {
+            var index = Math.floor(Math.random() * 100);
+            var dataVal = Math.floor(Math.random() * 50);
+            chart.data.datasets[0].data[index] = dataVal;
+        }
+        chart.update();
+    }, 3000);
 }
 
 // Create Line chart for % usage per month category wise
