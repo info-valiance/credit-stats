@@ -535,8 +535,35 @@ function createAppCatBarChart(ctx) {
         data: {
             labels: ['Mon','Tue','Wed','Thu','Fri','Sat','Sun'],
             datasets: [{
-                label: '8pm - 2am',
-                data: [450, 400, 450, 900, 1700, 1450, 1250],
+                label: '9am-12pm',
+                data: [100, 120, 90, 110, 330, 620, 740],
+                backgroundColor: 'rgb(118, 194, 175)',
+                borderColor: 'rgba(118, 194, 175, 0)',
+                // hoverBackgroundColor: 'rgba(210, 210, 210, 1)',
+                // hoverBorderColor: 'rgba(210, 210, 210, 1)',
+                borderWidth: 0
+            },
+            {
+                label: '12pm-3pm',
+                data: [250, 200, 230, 280, 400, 900, 970],
+                backgroundColor: 'rgb(173, 215, 246)',
+                borderColor: 'rgba(173, 215, 246, 0)',
+                // hoverBackgroundColor: 'rgba(210, 210, 210, 1)',
+                // hoverBorderColor: 'rgba(210, 210, 210, 1)',
+                borderWidth: 0
+            },
+            {
+                label: '3pm-6pm',
+                data: [300, 230, 330, 290, 500, 1200, 1270],
+                backgroundColor: 'rgb(141, 106, 159)',
+                borderColor: 'rgba(141, 106, 159, 0)',
+                // hoverBackgroundColor: 'rgba(210, 210, 210, 1)',
+                // hoverBorderColor: 'rgba(210, 210, 210, 1)',
+                borderWidth: 0
+            },
+            {
+                label: '6pm-9pm',
+                data: [510, 450, 650, 500, 1200, 1510, 1500],
                 backgroundColor: 'rgb(8, 146, 165)',
                 borderColor: 'rgba(8, 146, 165, 0)',
                 // hoverBackgroundColor: 'rgba(210, 210, 210, 1)',
@@ -544,17 +571,8 @@ function createAppCatBarChart(ctx) {
                 borderWidth: 0
             },
             {
-                label: '2am - 8am',
-                data: [100, 70, 70, 430, 600, 550, 200],
-                backgroundColor: 'rgb(232, 141, 103)',
-                borderColor: 'rgba(232, 141, 103, 0)',
-                // hoverBackgroundColor: 'rgba(210, 210, 210, 1)',
-                // hoverBorderColor: 'rgba(210, 210, 210, 1)',
-                borderWidth: 0
-            },
-            {
-                label: '8am - 2pm',
-                data: [100, 80, 120, 200, 400, 600, 550],
+                label: '9pm-12am',
+                data: [520, 470, 610, 450, 900, 1150, 990],
                 backgroundColor: 'rgb(7, 190, 184)',
                 borderColor: 'rgba(7, 190, 184, 0)',
                 // hoverBackgroundColor: 'rgba(210, 210, 210, 1)',
@@ -562,10 +580,28 @@ function createAppCatBarChart(ctx) {
                 borderWidth: 0
             },
             {
-                label: '2pm - 8pm',
-                data: [550, 700, 650, 700, 1400, 1550, 1200],
-                backgroundColor: 'rgb(141, 106, 159)',
-                borderColor: 'rgba(141, 106, 159, 0)',
+                label: '12am-3am',
+                data: [200, 180, 250, 150, 500, 750, 600],
+                backgroundColor: 'rgb(238, 96, 85)',
+                borderColor: 'rgba(238, 96, 85, 0)',
+                // hoverBackgroundColor: 'rgba(210, 210, 210, 1)',
+                // hoverBorderColor: 'rgba(210, 210, 210, 1)',
+                borderWidth: 0
+            },
+            {
+                label: '3am-6am',
+                data: [100, 80, 120, 150, 320, 400, 230],
+                backgroundColor: 'rgb(194, 249, 112)',
+                borderColor: 'rgba(194, 249, 112, 0)',
+                // hoverBackgroundColor: 'rgba(210, 210, 210, 1)',
+                // hoverBorderColor: 'rgba(210, 210, 210, 1)',
+                borderWidth: 0
+            },
+            {
+                label: '6am-9pm',
+                data: [20, 40, 10, 20, 60, 150, 130],
+                backgroundColor: 'rgb(232, 141, 103)',
+                borderColor: 'rgba(232, 141, 103, 0)',
                 // hoverBackgroundColor: 'rgba(210, 210, 210, 1)',
                 // hoverBorderColor: 'rgba(210, 210, 210, 1)',
                 borderWidth: 0
@@ -588,7 +624,7 @@ function createAppCatBarChart(ctx) {
                 labels: {
                     boxWidth: 10,
                     // usePointStyle: true,
-                    fontSize: 11
+                    fontSize: 12
                 }
             },
             tooltips: {
@@ -642,8 +678,35 @@ function createGroCatBarChart(ctx) {
         data: {
             labels: ['Mon','Tue','Wed','Thu','Fri','Sat','Sun'],
             datasets: [{
-                label: '8pm - 2am',
-                data: [105, 100, 100, 95, 90, 45, 30],
+                label: '9am-12pm',
+                data: [900, 920, 1000, 860, 800, 1000, 1080],
+                backgroundColor: 'rgb(118, 194, 175)',
+                borderColor: 'rgba(118, 194, 175, 0)',
+                // hoverBackgroundColor: 'rgba(210, 210, 210, 1)',
+                // hoverBorderColor: 'rgba(210, 210, 210, 1)',
+                borderWidth: 0
+            },
+            {
+                label: '12pm-3pm',
+                data: [880, 890, 970, 800, 790, 990, 930],
+                backgroundColor: 'rgb(173, 215, 246)',
+                borderColor: 'rgba(173, 215, 246, 0)',
+                // hoverBackgroundColor: 'rgba(210, 210, 210, 1)',
+                // hoverBorderColor: 'rgba(210, 210, 210, 1)',
+                borderWidth: 0
+            },
+            {
+                label: '3pm-6pm',
+                data: [800, 860, 830, 790, 850, 900, 870],
+                backgroundColor: 'rgb(141, 106, 159)',
+                borderColor: 'rgba(141, 106, 159, 0)',
+                // hoverBackgroundColor: 'rgba(210, 210, 210, 1)',
+                // hoverBorderColor: 'rgba(210, 210, 210, 1)',
+                borderWidth: 0
+            },
+            {
+                label: '6pm-9pm',
+                data: [2400, 2350, 2650, 1880, 1700, 1210, 1490],
                 backgroundColor: 'rgb(8, 146, 165)',
                 borderColor: 'rgba(8, 146, 165, 0)',
                 // hoverBackgroundColor: 'rgba(210, 210, 210, 1)',
@@ -651,17 +714,8 @@ function createGroCatBarChart(ctx) {
                 borderWidth: 0
             },
             {
-                label: '2am - 8am',
-                data: [8, 6, 9, 8, 18, 20, 10],
-                backgroundColor: 'rgb(232, 141, 103)',
-                borderColor: 'rgba(232, 141, 103, 0)',
-                // hoverBackgroundColor: 'rgba(210, 210, 210, 1)',
-                // hoverBorderColor: 'rgba(210, 210, 210, 1)',
-                borderWidth: 0
-            },
-            {
-                label: '8am - 2pm',
-                data: [70, 65, 70, 60, 55, 25, 28],
+                label: '9pm-12am',
+                data: [820, 770, 910, 750, 700, 650, 690],
                 backgroundColor: 'rgb(7, 190, 184)',
                 borderColor: 'rgba(7, 190, 184, 0)',
                 // hoverBackgroundColor: 'rgba(210, 210, 210, 1)',
@@ -669,10 +723,28 @@ function createGroCatBarChart(ctx) {
                 borderWidth: 0
             },
             {
-                label: '2pm - 8pm',
-                data: [120, 110, 115, 90, 70, 75, 60],
-                backgroundColor: 'rgb(141, 106, 159)',
-                borderColor: 'rgba(141, 106, 159, 0)',
+                label: '12am-3am',
+                data: [10, 20, 50, 0, 70, 50, 10],
+                backgroundColor: 'rgb(238, 96, 85)',
+                borderColor: 'rgba(238, 96, 85, 0)',
+                // hoverBackgroundColor: 'rgba(210, 210, 210, 1)',
+                // hoverBorderColor: 'rgba(210, 210, 210, 1)',
+                borderWidth: 0
+            },
+            {
+                label: '3am-6am',
+                data: [0, 10, 20, 0, 20, 10, 10],
+                backgroundColor: 'rgb(194, 249, 112)',
+                borderColor: 'rgba(194, 249, 112, 0)',
+                // hoverBackgroundColor: 'rgba(210, 210, 210, 1)',
+                // hoverBorderColor: 'rgba(210, 210, 210, 1)',
+                borderWidth: 0
+            },
+            {
+                label: '6am-9pm',
+                data: [120, 100, 180, 100, 80, 50, 30],
+                backgroundColor: 'rgb(232, 141, 103)',
+                borderColor: 'rgba(232, 141, 103, 0)',
                 // hoverBackgroundColor: 'rgba(210, 210, 210, 1)',
                 // hoverBorderColor: 'rgba(210, 210, 210, 1)',
                 borderWidth: 0
@@ -695,7 +767,7 @@ function createGroCatBarChart(ctx) {
                 labels: {
                     boxWidth: 10,
                     // usePointStyle: true,
-                    fontSize: 11
+                    fontSize: 12
                 }
             },
             tooltips: {
