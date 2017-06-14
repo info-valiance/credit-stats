@@ -105,7 +105,7 @@ function createbgBarChart(ctx) {
         // console.log(chart.data.datasets[0].data);
         for (var i = 0; i < 7; i++) {
             var index = Math.floor(Math.random() * 100);
-            var dataVal = Math.floor(Math.random() * 50);
+            var dataVal = Math.ceil(Math.random() * 50);
             chart.data.datasets[0].data[index] = dataVal;
         }
         chart.update();
