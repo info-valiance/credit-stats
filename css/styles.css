@@ -212,7 +212,8 @@ input {
 }
 
 .main-header h1 {
-    font-size: 44px;
+    /*font-size: 44px;*/
+    font-size: 24px;
 }
 
 .main-header p {
