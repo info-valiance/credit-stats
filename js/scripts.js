@@ -185,7 +185,7 @@ function createPerCatUseChart(ctx) {
             // maintainAspectRatio: false,
             responsiveAnimationDuration: 400,  // in ms
             title: {
-                text: 'Percent Usage',
+                text: 'Percentage Distribution',
                 display: true,
                 // fontColor: '#fff',
                 fontStyle: 'normal'
@@ -316,7 +316,7 @@ function createTotCatUseChart(ctx) {
             // maintainAspectRatio: false,
             responsiveAnimationDuration: 400,  // in ms
             title: {
-                text: 'Total Usage',
+                text: 'Volume Distribution',
                 display: true,
                 // fontColor: '#fff',
                 fontStyle: 'normal'
