@@ -126,6 +126,7 @@ function createPerCatUseChart(ctx) {
                 backgroundColor: 'rgba(255, 255, 255, 0)',
                 borderColor: 'rgb(232, 141, 103)',
                 pointBackgroundColor: 'rgb(232, 141, 103)',
+                lineTension: 0,
                 // data: [15, 14, 35, 29, 31, 8, 26, 6, 1, 23, 13, 18],
                 data: [15, 14, 20, 25, 33, 29, 26, 35, 33, 30, 28, 25],
             },
@@ -156,6 +157,7 @@ function createPerCatUseChart(ctx) {
                 backgroundColor: 'rgba(255, 255, 255, 0)',
                 borderColor: 'rgb(7, 190, 184)',
                 pointBackgroundColor: 'rgb(7, 190, 184)',
+                lineTension: 0,
                 data: [4, 8, 5, 10, 14, 10, 16, 20, 15, 11, 9, 12],
             },
             {
@@ -163,6 +165,7 @@ function createPerCatUseChart(ctx) {
                 backgroundColor: 'rgba(255, 255, 255, 0)',
                 borderColor: 'rgb(194, 249, 112)',
                 pointBackgroundColor: 'rgb(194, 249, 112)',
+                lineTension: 0,
                 data: [1, 6, 12, 19, 24, 22, 19, 25, 29, 22, 17, 20],
             },
             {
@@ -170,6 +173,7 @@ function createPerCatUseChart(ctx) {
                 backgroundColor: 'rgba(255, 255, 255, 0)',
                 borderColor: 'rgb(238, 96, 85)',
                 pointBackgroundColor: 'rgb(238, 96, 85)',
+                lineTension: 0,
                 // data: [5, 10, 27, 25, 28, 4, 20, 3, 10, 20, 10, 15],
                 data: [3, 8, 10, 15, 22, 19, 25, 27, 31, 25, 20, 22],
             }]
@@ -219,7 +223,8 @@ function createPerCatUseChart(ctx) {
                         callback: function(value, index, values) {
                             return value + '%';
                         },
-                        display: false
+                        // suggestedMax: 100,
+                        // display: false
                     },
                 }],
                 xAxes: [{
@@ -252,6 +257,7 @@ function createTotCatUseChart(ctx) {
                 backgroundColor: 'rgba(255, 255, 255, 0)',
                 borderColor: 'rgb(232, 141, 103)',
                 pointBackgroundColor: 'rgb(232, 141, 103)',
+                lineTension: 0,
                 // data: [15, 14, 35, 29, 31, 8, 26, 6, 1, 23, 13, 18],
                 data: [15, 14, 20, 25, 33, 29, 26, 35, 33, 30, 28, 25],
             },
@@ -282,6 +288,7 @@ function createTotCatUseChart(ctx) {
                 backgroundColor: 'rgba(255, 255, 255, 0)',
                 borderColor: 'rgb(7, 190, 184)',
                 pointBackgroundColor: 'rgb(7, 190, 184)',
+                lineTension: 0,
                 data: [4, 8, 5, 10, 14, 10, 16, 20, 15, 11, 9, 12],
             },
             {
@@ -289,6 +296,7 @@ function createTotCatUseChart(ctx) {
                 backgroundColor: 'rgba(255, 255, 255, 0)',
                 borderColor: 'rgb(194, 249, 112)',
                 pointBackgroundColor: 'rgb(194, 249, 112)',
+                lineTension: 0,
                 data: [1, 6, 12, 19, 24, 22, 19, 25, 29, 22, 17, 20],
             },
             {
@@ -296,6 +304,7 @@ function createTotCatUseChart(ctx) {
                 backgroundColor: 'rgba(255, 255, 255, 0)',
                 borderColor: 'rgb(238, 96, 85)',
                 pointBackgroundColor: 'rgb(238, 96, 85)',
+                lineTension: 0,
                 // data: [5, 10, 27, 25, 28, 4, 20, 3, 10, 20, 10, 15],
                 data: [3, 8, 10, 15, 22, 19, 25, 27, 31, 25, 20, 22],
             }]
