@@ -273,6 +273,11 @@ input {
 
 
 /* Table */
+.spendings-table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .spendings-table caption {
     text-align: center;
     font-size: 12px;
@@ -290,6 +295,8 @@ input {
 .spendings-table td {
     border-right: 3px solid rgba(118, 194, 175, 0.5);
     border-bottom: 3px solid rgba(118, 194, 175, 0.5);
+    -webkit-transition: 0.4s;
+    transition: 0.4s
 }
 
 .spendings-table td:first-of-type {
@@ -305,6 +312,21 @@ input {
 
 .spendings-table tr:last-of-type td {
     border-bottom: 0;
+}
+
+.spendings-table .border-right-null {
+    border-right: 0;
+}
+
+.spendings-select {
+    border: 3px solid rgba(118, 194, 175, 1);
+    border-radius: 3px;
+    margin-left: 5px;
+}
+
+.travel-td,
+.hotel-td {
+    display: none;
 }
 
 .max-spend {

@@ -26,7 +26,17 @@ $(document).ready(function () {
     // Transaction distribution in a particular day time across gorceries
     var appCatBar = document.getElementById("groCatBarChart");
     createGroCatBarChart(appCatBar);
+
+    // Change table data based on selected spending category
+    $('.spendings-select').on('change', updateSpendingsTable);
 });
+
+// Update spendings table based on selected category
+function updateSpendingsTable() {
+    $('[class*="-td"]').hide();
+    var tdClass = '.' + $(this).val().toLowerCase() + '-td';
+    $(tdClass).show();
+}
 
 // Create Line chart for Total Views
 function createbgBarChart(ctx) {

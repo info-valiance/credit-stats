@@ -139,7 +139,13 @@
                 <div class="graph-row">
                     <div class="col-md-12" style="overflow: auto">
                         <table class="spendings-table">
-                            <caption>Spendings in Apparels</caption>
+                            <caption>Spendings in
+                                <select class="spendings-select" name="">
+                                    <option value="Apparel">Apparels</option>
+                                    <option value="Travel">Travel</option>
+                                    <option value="Hotel">Hotels</option>
+                                </select>
+                            </caption>
                             <thead>
                                 <tr>
                                     <th></th>
@@ -160,108 +166,318 @@
                             <tbody>
                                 <tr>
                                     <td>Palash Susan</td>
-                                    <td>6%</td>
-                                    <td class="max-spend">18%</td>
-                                    <td>11%</td>
-                                    <td>7%</td>
-                                    <td>4%</td>
-                                    <td class="min-spend">3%</td>
-                                    <td>5%</td>
-                                    <td>8%</td>
-                                    <td class="max-spend">16%</td>
-                                    <td>9%</td>
-                                    <td>10%</td>
-                                    <td>4%</td>
+
+                                    <!-- Apparels Cells -->
+                                    <td class="apparel-td">6%</td>
+                                    <td class="apparel-td max-spend">18%</td>
+                                    <td class="apparel-td">11%</td>
+                                    <td class="apparel-td">7%</td>
+                                    <td class="apparel-td">4%</td>
+                                    <td class="apparel-td min-spend">3%</td>
+                                    <td class="apparel-td">5%</td>
+                                    <td class="apparel-td">8%</td>
+                                    <td class="apparel-td max-spend">16%</td>
+                                    <td class="apparel-td">9%</td>
+                                    <td class="apparel-td">10%</td>
+                                    <td class="apparel-td border-right-null">4%</td>
+
+                                    <!-- Travel Cells -->
+                                    <td class="travel-td">4%</td>
+                                    <td class="travel-td">7%</td>
+                                    <td class="travel-td">5%</td>
+                                    <td class="travel-td">4%</td>
+                                    <td class="travel-td">6%</td>
+                                    <td class="travel-td max-spend">24%</td>
+                                    <td class="travel-td">5%</td>
+                                    <td class="travel-td">3%</td>
+                                    <td class="travel-td">4%</td>
+                                    <td class="travel-td">4%</td>
+                                    <td class="travel-td">4%</td>
+                                    <td class="travel-td border-right-null">9%</td>
+
+                                    <!-- Hotel Cells -->
+                                    <td class="hotel-td">0%</td>
+                                    <td class="hotel-td">0%</td>
+                                    <td class="hotel-td">0%</td>
+                                    <td class="hotel-td">3%</td>
+                                    <td class="hotel-td">0%</td>
+                                    <td class="hotel-td max-spend">11%</td>
+                                    <td class="hotel-td">0%</td>
+                                    <td class="hotel-td">0%</td>
+                                    <td class="hotel-td">0%</td>
+                                    <td class="hotel-td">0%</td>
+                                    <td class="hotel-td">0%</td>
+                                    <td class="hotel-td border-right-null">5%</td>
                                 </tr>
                                 <tr>
                                     <td>Saisha Sen</td>
-                                    <td>3%</td>
-                                    <td>4%</td>
-                                    <td>6%</td>
-                                    <td class="max-spend">21%</td>
-                                    <td>8%</td>
-                                    <td>6%</td>
-                                    <td>4%</td>
-                                    <td class="min-spend">2%</td>
-                                    <td>6%</td>
-                                    <td class="max-spend">20%</td>
-                                    <td>5%</td>
-                                    <td class="min-spend">2%</td>
+
+                                    <!-- Apparels Cells -->
+                                    <td class="apparel-td">3%</td>
+                                    <td class="apparel-td">4%</td>
+                                    <td class="apparel-td">6%</td>
+                                    <td class="apparel-td max-spend">21%</td>
+                                    <td class="apparel-td">8%</td>
+                                    <td class="apparel-td">6%</td>
+                                    <td class="apparel-td">4%</td>
+                                    <td class="apparel-td min-spend">2%</td>
+                                    <td class="apparel-td">6%</td>
+                                    <td class="apparel-td max-spend">20%</td>
+                                    <td class="apparel-td">5%</td>
+                                    <td class="apparel-td border-right-null min-spend">2%</td>
+
+                                    <!-- Travel Cells -->
+                                    <td class="travel-td">6%</td>
+                                    <td class="travel-td">3%</td>
+                                    <td class="travel-td">5%</td>
+                                    <td class="travel-td">3%</td>
+                                    <td class="travel-td">4%</td>
+                                    <td class="travel-td max-spend">14%</td>
+                                    <td class="travel-td">5%</td>
+                                    <td class="travel-td">4%</td>
+                                    <td class="travel-td">5%</td>
+                                    <td class="travel-td">4%</td>
+                                    <td class="travel-td">5%</td>
+                                    <td class="travel-td border-right-null">4%</td>
+
+                                    <!-- Hotel Cells -->
+                                    <td class="hotel-td">0%</td>
+                                    <td class="hotel-td">0%</td>
+                                    <td class="hotel-td">0%</td>
+                                    <td class="hotel-td">0%</td>
+                                    <td class="hotel-td">0%</td>
+                                    <td class="hotel-td max-spend">5%</td>
+                                    <td class="hotel-td">0%</td>
+                                    <td class="hotel-td">0%</td>
+                                    <td class="hotel-td">0%</td>
+                                    <td class="hotel-td">0%</td>
+                                    <td class="hotel-td">1%</td>
+                                    <td class="hotel-td border-right-null">0%</td>
                                 </tr>
                                 <tr>
                                     <td>Tara Singh</td>
-                                    <td>5%</td>
-                                    <td class="max-spend">19%</td>
-                                    <td>10%</td>
-                                    <td>8%</td>
-                                    <td class="min-spend">1%</td>
-                                    <td>3%</td>
-                                    <td>6%</td>
-                                    <td>8%</td>
-                                    <td class="max-spend">15%</td>
-                                    <td>9%</td>
-                                    <td>7%</td>
-                                    <td>4%</td>
+
+                                    <!-- Apparels Cells -->
+                                    <td class="apparel-td">5%</td>
+                                    <td class="apparel-td max-spend">19%</td>
+                                    <td class="apparel-td">10%</td>
+                                    <td class="apparel-td">8%</td>
+                                    <td class="apparel-td min-spend">1%</td>
+                                    <td class="apparel-td">3%</td>
+                                    <td class="apparel-td">6%</td>
+                                    <td class="apparel-td">8%</td>
+                                    <td class="apparel-td max-spend">15%</td>
+                                    <td class="apparel-td">9%</td>
+                                    <td class="apparel-td">7%</td>
+                                    <td class="apparel-td border-right-null">4%</td>
+
+                                    <!-- Travel Cells -->
+                                    <td class="travel-td">6%</td>
+                                    <td class="travel-td">5%</td>
+                                    <td class="travel-td">5%</td>
+                                    <td class="travel-td">3%</td>
+                                    <td class="travel-td">4%</td>
+                                    <td class="travel-td">3%</td>
+                                    <td class="travel-td">5%</td>
+                                    <td class="travel-td">8%</td>
+                                    <td class="travel-td">4%</td>
+                                    <td class="travel-td">5%</td>
+                                    <td class="travel-td">3%</td>
+                                    <td class="travel-td border-right-null max-spend">19%</td>
+
+                                    <!-- Hotel Cells -->
+                                    <td class="hotel-td">1%</td>
+                                    <td class="hotel-td">0%</td>
+                                    <td class="hotel-td">0%</td>
+                                    <td class="hotel-td">0%</td>
+                                    <td class="hotel-td">0%</td>
+                                    <td class="hotel-td">0%</td>
+                                    <td class="hotel-td">0%</td>
+                                    <td class="hotel-td">0%</td>
+                                    <td class="hotel-td">0%</td>
+                                    <td class="hotel-td">0%</td>
+                                    <td class="hotel-td">0%</td>
+                                    <td class="hotel-td border-right-null">7%</td>
                                 </tr>
                                 <tr>
                                     <td>Sanat Pancholi</td>
-                                    <td class="min-spend">1%</td>
-                                    <td>5%</td>
-                                    <td>10%</td>
-                                    <td class="max-spend">19%</td>
-                                    <td>4%</td>
-                                    <td>3%</td>
-                                    <td>6%</td>
-                                    <td>11%</td>
-                                    <td>6%</td>
-                                    <td class="max-spend">18%</td>
-                                    <td>4%</td>
-                                    <td>5%</td>
+
+                                    <!-- Apparels Cells -->
+                                    <td class="apparel-td min-spend">1%</td>
+                                    <td class="apparel-td">5%</td>
+                                    <td class="apparel-td">10%</td>
+                                    <td class="apparel-td max-spend">19%</td>
+                                    <td class="apparel-td">4%</td>
+                                    <td class="apparel-td">3%</td>
+                                    <td class="apparel-td">6%</td>
+                                    <td class="apparel-td">11%</td>
+                                    <td class="apparel-td">6%</td>
+                                    <td class="apparel-td max-spend">18%</td>
+                                    <td class="apparel-td">4%</td>
+                                    <td class="apparel-td border-right-null">5%</td>
+
+                                    <!-- Travel Cells -->
+                                    <td class="travel-td">7%</td>
+                                    <td class="travel-td">6%</td>
+                                    <td class="travel-td">7%</td>
+                                    <td class="travel-td">8%</td>
+                                    <td class="travel-td">9%</td>
+                                    <td class="travel-td">10%</td>
+                                    <td class="travel-td">7%</td>
+                                    <td class="travel-td">8%</td>
+                                    <td class="travel-td">6%</td>
+                                    <td class="travel-td">7%</td>
+                                    <td class="travel-td">7%</td>
+                                    <td class="travel-td border-right-null max-spend">19%</td>
+
+                                    <!-- Hotel Cells -->
+                                    <td class="hotel-td">2%</td>
+                                    <td class="hotel-td">2%</td>
+                                    <td class="hotel-td">2%</td>
+                                    <td class="hotel-td">2%</td>
+                                    <td class="hotel-td">2%</td>
+                                    <td class="hotel-td">4%</td>
+                                    <td class="hotel-td">2%</td>
+                                    <td class="hotel-td">2%</td>
+                                    <td class="hotel-td">2%</td>
+                                    <td class="hotel-td">2%</td>
+                                    <td class="hotel-td">2%</td>
+                                    <td class="hotel-td border-right-null max-spend">7%</td>
                                 </tr>
                                 <tr>
                                     <td>Amit Chauhan</td>
-                                    <td>4%</td>
-                                    <td>6%</td>
-                                    <td>9%</td>
-                                    <td class="max-spend">23%</td>
-                                    <td>3%</td>
-                                    <td>6%</td>
-                                    <td>4%</td>
-                                    <td>8%</td>
-                                    <td class="max-spend">19%</td>
-                                    <td>6%</td>
-                                    <td>3%</td>
-                                    <td class="min-spend">2%</td>
+
+                                    <!-- Apparels Cells -->
+                                    <td class="apparel-td">4%</td>
+                                    <td class="apparel-td">6%</td>
+                                    <td class="apparel-td">9%</td>
+                                    <td class="apparel-td max-spend">23%</td>
+                                    <td class="apparel-td">3%</td>
+                                    <td class="apparel-td">6%</td>
+                                    <td class="apparel-td">4%</td>
+                                    <td class="apparel-td">8%</td>
+                                    <td class="apparel-td max-spend">19%</td>
+                                    <td class="apparel-td">6%</td>
+                                    <td class="apparel-td">3%</td>
+                                    <td class="apparel-td border-right-null min-spend">2%</td>
+
+                                    <!-- Travel Cells -->
+                                    <td class="travel-td">1%</td>
+                                    <td class="travel-td">2%</td>
+                                    <td class="travel-td">1%</td>
+                                    <td class="travel-td">3%</td>
+                                    <td class="travel-td">7%</td>
+                                    <td class="travel-td max-spend">12%</td>
+                                    <td class="travel-td">3%</td>
+                                    <td class="travel-td">2%</td>
+                                    <td class="travel-td">1%</td>
+                                    <td class="travel-td">3%</td>
+                                    <td class="travel-td">1%</td>
+                                    <td class="travel-td border-right-null max-spend">12%</td>
+
+                                    <!-- Hotel Cells -->
+                                    <td class="hotel-td">0%</td>
+                                    <td class="hotel-td">0%</td>
+                                    <td class="hotel-td">0%</td>
+                                    <td class="hotel-td">0%</td>
+                                    <td class="hotel-td">1%</td>
+                                    <td class="hotel-td max-spend">4%</td>
+                                    <td class="hotel-td">0%</td>
+                                    <td class="hotel-td">0%</td>
+                                    <td class="hotel-td">0%</td>
+                                    <td class="hotel-td">0%</td>
+                                    <td class="hotel-td">0%</td>
+                                    <td class="hotel-td border-right-null max-spend">4%</td>
                                 </tr>
                                 <tr>
                                     <td>Puneet Arya</td>
-                                    <td>4%</td>
-                                    <td>8%</td>
-                                    <td class="max-spend">20%</td>
-                                    <td>7%</td>
-                                    <td class="min-spend">2%</td>
-                                    <td>6%</td>
-                                    <td>4%</td>
-                                    <td class="max-spend">16%</td>
-                                    <td>8%</td>
-                                    <td>7%</td>
-                                    <td>5%</td>
-                                    <td>3%</td>
+
+                                    <!-- Apparels Cells -->
+                                    <td class="apparel-td">4%</td>
+                                    <td class="apparel-td">8%</td>
+                                    <td class="apparel-td max-spend">20%</td>
+                                    <td class="apparel-td">7%</td>
+                                    <td class="apparel-td min-spend">2%</td>
+                                    <td class="apparel-td">6%</td>
+                                    <td class="apparel-td">4%</td>
+                                    <td class="apparel-td max-spend">16%</td>
+                                    <td class="apparel-td">8%</td>
+                                    <td class="apparel-td">7%</td>
+                                    <td class="apparel-td">5%</td>
+                                    <td class="apparel-td border-right-null">3%</td>
+
+                                    <!-- Travel Cells -->
+                                    <td class="travel-td">3%</td>
+                                    <td class="travel-td">3%</td>
+                                    <td class="travel-td">4%</td>
+                                    <td class="travel-td">2%</td>
+                                    <td class="travel-td">3%</td>
+                                    <td class="travel-td">4%</td>
+                                    <td class="travel-td">2%</td>
+                                    <td class="travel-td">3%</td>
+                                    <td class="travel-td">4%</td>
+                                    <td class="travel-td">3%</td>
+                                    <td class="travel-td">2%</td>
+                                    <td class="travel-td border-right-null max-spend">19%</td>
+
+                                    <!-- Hotel Cells -->
+                                    <td class="hotel-td">0%</td>
+                                    <td class="hotel-td">0%</td>
+                                    <td class="hotel-td">0%</td>
+                                    <td class="hotel-td">0%</td>
+                                    <td class="hotel-td">0%</td>
+                                    <td class="hotel-td">0%</td>
+                                    <td class="hotel-td">0%</td>
+                                    <td class="hotel-td">0%</td>
+                                    <td class="hotel-td">0%</td>
+                                    <td class="hotel-td">0%</td>
+                                    <td class="hotel-td">0%</td>
+                                    <td class="hotel-td border-right-null max-spend">7%</td>
                                 </tr>
                                 <tr>
                                     <td>Aanya Jain</td>
-                                    <td class="min-spend">2%</td>
-                                    <td class="max-spend">21%</td>
-                                    <td>6%</td>
-                                    <td>8%</td>
-                                    <td>4%</td>
-                                    <td>6%</td>
-                                    <td>5%</td>
-                                    <td class="max-spend">18%</td>
-                                    <td>10%</td>
-                                    <td>5%</td>
-                                    <td>7%</td>
-                                    <td>3%</td>
+
+                                    <!-- Apparels Cells -->
+                                    <td class="apparel-td min-spend">2%</td>
+                                    <td class="apparel-td max-spend">21%</td>
+                                    <td class="apparel-td">6%</td>
+                                    <td class="apparel-td">8%</td>
+                                    <td class="apparel-td">4%</td>
+                                    <td class="apparel-td">6%</td>
+                                    <td class="apparel-td">5%</td>
+                                    <td class="apparel-td max-spend">18%</td>
+                                    <td class="apparel-td">10%</td>
+                                    <td class="apparel-td">5%</td>
+                                    <td class="apparel-td">7%</td>
+                                    <td class="apparel-td border-right-null">3%</td>
+
+                                    <!-- Travel Cells -->
+                                    <td class="travel-td">6%</td>
+                                    <td class="travel-td">18%</td>
+                                    <td class="travel-td">11%</td>
+                                    <td class="travel-td">7%</td>
+                                    <td class="travel-td">4%</td>
+                                    <td class="travel-td max-spend">18%</td>
+                                    <td class="travel-td">5%</td>
+                                    <td class="travel-td">8%</td>
+                                    <td class="travel-td">16%</td>
+                                    <td class="travel-td">9%</td>
+                                    <td class="travel-td">10%</td>
+                                    <td class="travel-td border-right-null">12%</td>
+
+                                    <!-- Hotel Cells -->
+                                    <td class="hotel-td">2%</td>
+                                    <td class="hotel-td">2%</td>
+                                    <td class="hotel-td">2%</td>
+                                    <td class="hotel-td">2%</td>
+                                    <td class="hotel-td">2%</td>
+                                    <td class="hotel-td max-spend">8%</td>
+                                    <td class="hotel-td">2%</td>
+                                    <td class="hotel-td">2%</td>
+                                    <td class="hotel-td">2%</td>
+                                    <td class="hotel-td">2%</td>
+                                    <td class="hotel-td">2%</td>
+                                    <td class="hotel-td border-right-null">5%</td>
                                 </tr>
                             </tbody>
                         </table>
