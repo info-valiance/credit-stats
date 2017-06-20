@@ -321,7 +321,7 @@ function createTotCatUseChart(ctx) {
                 borderWidth: 2,
                 pointRadius: 1,
                 pointHoverRadius: 2,
-                data: [2000, 0000, 6000, 3000, 2000, 0000, 2000, 1000, 7000, 10000, 2000, 1000],
+                data: [2000, 500, 6000, 3000, 2000, 500, 2000, 1000, 7000, 10000, 2000, 1000],
             },
             {
                 label: "Groceries",
@@ -344,7 +344,7 @@ function createTotCatUseChart(ctx) {
                 pointRadius: 1,
                 pointHoverRadius: 2,
                 // data: [5, 10, 27, 25, 28, 4, 20, 3, 10, 20, 10, 15],
-                data: [1000, 2000, 0000, 0000, 1000, 3000, 3000, 1000, 2000, 6000, 1000, 2000],
+                data: [1000, 2000, 500, 500, 1000, 3000, 3000, 1000, 2000, 6000, 1000, 2000],
             }]
         },
 
