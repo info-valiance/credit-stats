@@ -225,22 +225,30 @@ input {
     margin-top: 40px;
 }
 
-.stat-card {
-    /*border: 1px solid rgba(0, 0, 0, 0.1);*/
+/*.stat-card {
     border-top: 3px solid #76c2af;
-    /*border-bottom: 3px solid #76c2af;*/
     -webkit-box-shadow: 12px 15px 20px 0 rgba(46,61,73,.15);
     box-shadow: 12px 15px 20px 0 rgba(46,61,73,.15);
     border-radius: 6px;
     padding: 15px;
     -webkit-transition: 0.5s;
     transition: 0.5s;
-}
+}*/
 
-.stat-card:hover {
+.stat-card {
+    border-top: 3px solid #76c2af;
     -webkit-box-shadow: 2px 4px 8px 0 rgba(46,61,73,.2);
     box-shadow: 2px 4px 8px 0 rgba(46,61,73,.2);
+    border-radius: 6px;
+    padding: 15px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
 }
+
+/*.stat-card:hover {
+    -webkit-box-shadow: 2px 4px 8px 0 rgba(46,61,73,.2);
+    box-shadow: 2px 4px 8px 0 rgba(46,61,73,.2);
+}*/
 
 @media screen and (max-width: 767px) {
     .three-stats-wrapper {

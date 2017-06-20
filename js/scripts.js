@@ -168,8 +168,8 @@ function createPerCatUseChart(ctx) {
             {
                 label: "Apparels",
                 backgroundColor: 'rgba(255, 255, 255, 0)',
-                borderColor: '#0097A7',
-                pointBackgroundColor: '#0097A7',
+                borderColor: '#00ACC1',
+                pointBackgroundColor: '#00ACC1',
                 lineTension: 0.1,
                 borderWidth: 2,
                 pointRadius: 1,
@@ -179,8 +179,8 @@ function createPerCatUseChart(ctx) {
             {
                 label: "Groceries",
                 backgroundColor: 'rgba(255, 255, 255, 0)',
-                borderColor: '#00ACC1',
-                pointBackgroundColor: '#00ACC1',
+                borderColor: '#4DD0E1',
+                pointBackgroundColor: '#4DD0E1',
                 lineTension: 0.1,
                 borderWidth: 2,
                 pointRadius: 1,
@@ -190,8 +190,8 @@ function createPerCatUseChart(ctx) {
             {
                 label: "Electronics",
                 backgroundColor: 'rgba(255, 255, 255, 0)',
-                borderColor: '#00BCD4',
-                pointBackgroundColor: '#00BCD4',
+                borderColor: '#B2EBF2',
+                pointBackgroundColor: '#B2EBF2',
                 lineTension: 0.1,
                 borderWidth: 2,
                 pointRadius: 1,
@@ -320,8 +320,8 @@ function createTotCatUseChart(ctx) {
             {
                 label: "Apparels",
                 backgroundColor: 'rgba(255, 255, 255, 0)',
-                borderColor: '#0097A7',
-                pointBackgroundColor: '#0097A7',
+                borderColor: '#00ACC1',
+                pointBackgroundColor: '#00ACC1',
                 lineTension: 0.1,
                 borderWidth: 2,
                 pointRadius: 1,
@@ -331,8 +331,8 @@ function createTotCatUseChart(ctx) {
             {
                 label: "Groceries",
                 backgroundColor: 'rgba(255, 255, 255, 0)',
-                borderColor: '#00ACC1',
-                pointBackgroundColor: '#00ACC1',
+                borderColor: '#4DD0E1',
+                pointBackgroundColor: '#4DD0E1',
                 lineTension: 0.1,
                 borderWidth: 2,
                 pointRadius: 1,
@@ -342,8 +342,8 @@ function createTotCatUseChart(ctx) {
             {
                 label: "Electronics",
                 backgroundColor: 'rgba(255, 255, 255, 0)',
-                borderColor: '#00BCD4',
-                pointBackgroundColor: '#00BCD4',
+                borderColor: '#B2EBF2',
+                pointBackgroundColor: '#B2EBF2',
                 lineTension: 0.1,
                 borderWidth: 2,
                 pointRadius: 1,
@@ -436,14 +436,15 @@ function createAppCatUseChart(ctx) {
         // The data for our dataset
         data: {
             // labels: ["Flipkart", "Amazon", "Snapdeal", "Ebay", "Myntra", "Jabong", "Shopclues", "Rest"],
-            labels: ["Flipkart", "Amazon", "Snapdeal", "Ebay", "Myntra", "Jabong", "Shopclues", "Rest"],
+            labels: ["Flipkart", "Amazon", "Snapdeal", "Ebay","Rest"],
             datasets: [{
                 label: "Transactions",
-                backgroundColor: ['#00838F', '#0097A7', '#00ACC1', '#00BCD4', '#26C6DA', '#4DD0E1', '#80DEEA', '#B2EBF2'],
+                backgroundColor: ['#00838F', '#0097A7', '#00ACC1', '#00BCD4', '#80DEEA'],
                 borderColor: '#fff',
                 borderWidth: 0,
                 lineTension: 0,
-                data: [22, 20, 14, 12, 9, 8, 6, 9],
+                // data: [22, 20, 14, 12, 9, 8, 6, 9],
+                data: [22, 20, 14, 12, 32],
             }]
         },
 
@@ -512,14 +513,17 @@ function createGroCatUseChart(ctx) {
 
         // The data for our dataset
         data: {
-            labels: ["BigBasket", "Grofers", "Amazon", "Spencers", "RelianceSmart", "Rest"],
+            // labels: ["BigBasket", "Grofers", "Amazon", "Spencers", "RelianceSmart", "Rest"],
+            labels: ["BigBasket", "Grofers", "Amazon", "Rest"],
             datasets: [{
                 label: "Transactions",
-                backgroundColor: ['#00838F', '#0097A7', '#00ACC1', '#00BCD4', '#26C6DA', '#4DD0E1'],
+                // backgroundColor: ['#00838F', '#0097A7', '#00ACC1', '#00BCD4', '#4DD0E1', '#80DEEA', '#B2EBF2'],
+                backgroundColor: ['#00838F', '#0097A7', '#00ACC1', '#80DEEA'],
                 borderColor: '#fff',
                 borderWidth: 0,
                 lineTension: 0,
                 data: [32, 30, 20, 9, 6, 3],
+                data: [32, 30, 20, 18],
             }]
         },
 
