@@ -220,6 +220,8 @@ function createPerCatUseChart(ctx) {
                         return data.datasets[tooltipItem.datasetIndex].label +': ' + tooltipItem.yLabel + '%';
                     }
                 },
+                mode: 'point',
+                // intersect: false,
                 // enabled: false
             },
             scales: {
@@ -286,7 +288,7 @@ function createTotCatUseChart(ctx) {
                 pointRadius: 1,
                 pointHoverRadius: 2,
                 // data: [15, 14, 35, 29, 31, 8, 26, 6, 1, 23, 13, 18],
-                data: [1, 1, 3, 1, 2, 4, 1, 2, 1, 1, 2, 4],
+                data: [1000, 1000, 3000, 1000, 2000, 4000, 1000, 2000, 1000, 1000, 2000, 4000],
             },
             // {
             //     label: "Transport",
@@ -319,7 +321,7 @@ function createTotCatUseChart(ctx) {
                 borderWidth: 2,
                 pointRadius: 1,
                 pointHoverRadius: 2,
-                data: [2, 0, 6, 3, 2, 0, 2, 1, 7, 10, 2, 1],
+                data: [2000, 0000, 6000, 3000, 2000, 0000, 2000, 1000, 7000, 10000, 2000, 1000],
             },
             {
                 label: "Groceries",
@@ -330,7 +332,7 @@ function createTotCatUseChart(ctx) {
                 borderWidth: 2,
                 pointRadius: 1,
                 pointHoverRadius: 2,
-                data: [6, 6, 5, 7, 7, 9, 6, 5, 6, 6, 6, 3],
+                data: [6000, 6000, 5000, 7000, 7000, 9000, 6000, 5000, 6000, 6000, 6000, 3000],
             },
             {
                 label: "Electronics",
@@ -342,7 +344,7 @@ function createTotCatUseChart(ctx) {
                 pointRadius: 1,
                 pointHoverRadius: 2,
                 // data: [5, 10, 27, 25, 28, 4, 20, 3, 10, 20, 10, 15],
-                data: [1, 2, 0, 0, 1, 3, 3, 1, 2, 6, 1, 2],
+                data: [1000, 2000, 0000, 0000, 1000, 3000, 3000, 1000, 2000, 6000, 1000, 2000],
             }]
         },
 
