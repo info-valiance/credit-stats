@@ -443,6 +443,7 @@ function createAppCatUseChart(ctx) {
 
         // Configuration options go here
         options: {
+            // cutoutPercentage: 0,
             responsive: true,
             maintainAspectRatio: false,
             responsiveAnimationDuration: 400,  // in ms
