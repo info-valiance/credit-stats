@@ -339,6 +339,18 @@ input {
     color: rgb(173, 215, 246);
 }
 
+@media screen and (min-width: 1201px) {
+    canvas.graph {
+        height: 275px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    canvas.graph {
+        height: 225px;
+    }
+}
+
 /**********************************/
 
 /************* Footer *************/

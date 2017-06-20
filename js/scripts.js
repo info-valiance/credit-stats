@@ -204,7 +204,7 @@ function createPerCatUseChart(ctx) {
         // Configuration options go here
         options: {
             responsive: true,
-            // maintainAspectRatio: false,
+            maintainAspectRatio: false,
             responsiveAnimationDuration: 400,  // in ms
             title: {
                 text: 'Percentage Distribution',
@@ -356,7 +356,7 @@ function createTotCatUseChart(ctx) {
         // Configuration options go here
         options: {
             responsive: true,
-            // maintainAspectRatio: false,
+            maintainAspectRatio: false,
             responsiveAnimationDuration: 400,  // in ms
             title: {
                 text: 'Volume Distribution',
@@ -666,7 +666,7 @@ function createAppCatBarChart(ctx) {
         // Configuration options go here
         options: {
             responsive: true,
-            // maintainAspectRatio: false,
+            maintainAspectRatio: false,
             // responsiveAnimationDuration: 400,  // in ms
             title: {
                 text: 'Transactions for Apparels',
@@ -809,7 +809,7 @@ function createGroCatBarChart(ctx) {
         // Configuration options go here
         options: {
             responsive: true,
-            // maintainAspectRatio: false,
+            maintainAspectRatio: false,
             // responsiveAnimationDuration: 400,  // in ms
             title: {
                 text: 'Transactions for Groceries',
