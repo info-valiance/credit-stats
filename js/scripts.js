@@ -134,9 +134,12 @@ function createPerCatUseChart(ctx) {
             datasets: [{
                 label: "Healthcare",
                 backgroundColor: 'rgba(255, 255, 255, 0)',
-                borderColor: 'rgb(232, 141, 103)',
-                pointBackgroundColor: 'rgb(232, 141, 103)',
-                lineTension: 0,
+                borderColor: '#00838F',
+                pointBackgroundColor: '#00838F',
+                lineTension: 0.1,
+                borderWidth: 2,
+                pointRadius: 1,
+                pointHoverRadius: 2,
                 // data: [15, 14, 35, 29, 31, 8, 26, 6, 1, 23, 13, 18],
                 data: [10, 8, 6, 14, 6, 4, 5, 9, 11, 7, 8, 5],
             },
@@ -165,25 +168,34 @@ function createPerCatUseChart(ctx) {
             {
                 label: "Apparels",
                 backgroundColor: 'rgba(255, 255, 255, 0)',
-                borderColor: 'rgb(7, 190, 184)',
-                pointBackgroundColor: 'rgb(7, 190, 184)',
-                lineTension: 0,
+                borderColor: '#0097A7',
+                pointBackgroundColor: '#0097A7',
+                lineTension: 0.1,
+                borderWidth: 2,
+                pointRadius: 1,
+                pointHoverRadius: 2,
                 data: [6, 18, 11, 7, 3, 4, 5, 8, 16, 23, 10, 4],
             },
             {
                 label: "Groceries",
                 backgroundColor: 'rgba(255, 255, 255, 0)',
-                borderColor: 'rgb(194, 249, 112)',
-                pointBackgroundColor: 'rgb(194, 249, 112)',
-                lineTension: 0,
+                borderColor: '#00ACC1',
+                pointBackgroundColor: '#00ACC1',
+                lineTension: 0.1,
+                borderWidth: 2,
+                pointRadius: 1,
+                pointHoverRadius: 2,
                 data: [15, 13, 15, 14, 18, 22, 15, 15, 16, 14, 16, 8],
             },
             {
                 label: "Electronics",
                 backgroundColor: 'rgba(255, 255, 255, 0)',
-                borderColor: 'rgb(238, 96, 85)',
-                pointBackgroundColor: 'rgb(238, 96, 85)',
-                lineTension: 0,
+                borderColor: '#00BCD4',
+                pointBackgroundColor: '#00BCD4',
+                lineTension: 0.1,
+                borderWidth: 2,
+                pointRadius: 1,
+                pointHoverRadius: 2,
                 // data: [5, 10, 27, 25, 28, 4, 20, 3, 10, 20, 10, 15],
                 data: [3, 8, 4, 7, 4, 9, 15, 7, 8, 28, 6, 12],
             }]
@@ -221,9 +233,13 @@ function createPerCatUseChart(ctx) {
                 yAxes: [{
                     // display: false,
                     gridLines: {
-                        color: 'rgba(255, 255, 255, 0.3)',
-                        lineWidth: 2,
-                        drawBorder: false
+                        color: 'rgba(0, 0, 0, 0.2)',
+                        // lineWidth: 2,
+                        // drawBorder: true,
+                        // display: false
+                        display: true,
+                        drawBorder: true,
+                        drawOnChartArea: false,
                     },
                     ticks: {
                         beginAtZero: true,
@@ -239,9 +255,14 @@ function createPerCatUseChart(ctx) {
                 }],
                 xAxes: [{
                     gridLines: {
-                        // color: 'rgba(255, 255, 255, 0.3)',
-                        lineWidth: 2,
-                        drawBorder: false
+                        color: 'rgba(0, 0, 0, 0.2)',
+                        // lineWidth: 2,
+                        // drawBorder: true,
+                        // drawOnChartArea: false,
+                        // display: true,
+                        display: true,
+                        drawBorder: true,
+                        drawOnChartArea: false,
                     },
                     ticks: {
                         // display: false
@@ -265,9 +286,12 @@ function createTotCatUseChart(ctx) {
             datasets: [{
                 label: "Healthcare",
                 backgroundColor: 'rgba(255, 255, 255, 0)',
-                borderColor: 'rgb(232, 141, 103)',
-                pointBackgroundColor: 'rgb(232, 141, 103)',
-                lineTension: 0,
+                borderColor: '#00838F',
+                pointBackgroundColor: '#00838F',
+                lineTension: 0.1,
+                borderWidth: 2,
+                pointRadius: 1,
+                pointHoverRadius: 2,
                 // data: [15, 14, 35, 29, 31, 8, 26, 6, 1, 23, 13, 18],
                 data: [1, 1, 3, 1, 2, 4, 1, 2, 1, 1, 2, 4],
             },
@@ -296,25 +320,34 @@ function createTotCatUseChart(ctx) {
             {
                 label: "Apparels",
                 backgroundColor: 'rgba(255, 255, 255, 0)',
-                borderColor: 'rgb(7, 190, 184)',
-                pointBackgroundColor: 'rgb(7, 190, 184)',
-                lineTension: 0,
-                data: [2, 0, 6, 3, 2, 0, 2, 1, 7, 10, 1, 4],
+                borderColor: '#0097A7',
+                pointBackgroundColor: '#0097A7',
+                lineTension: 0.1,
+                borderWidth: 2,
+                pointRadius: 1,
+                pointHoverRadius: 2,
+                data: [2, 0, 6, 3, 2, 0, 2, 1, 7, 10, 2, 1],
             },
             {
                 label: "Groceries",
                 backgroundColor: 'rgba(255, 255, 255, 0)',
-                borderColor: 'rgb(194, 249, 112)',
-                pointBackgroundColor: 'rgb(194, 249, 112)',
-                lineTension: 0,
+                borderColor: '#00ACC1',
+                pointBackgroundColor: '#00ACC1',
+                lineTension: 0.1,
+                borderWidth: 2,
+                pointRadius: 1,
+                pointHoverRadius: 2,
                 data: [6, 6, 5, 7, 7, 9, 6, 5, 6, 6, 6, 3],
             },
             {
                 label: "Electronics",
                 backgroundColor: 'rgba(255, 255, 255, 0)',
-                borderColor: 'rgb(238, 96, 85)',
-                pointBackgroundColor: 'rgb(238, 96, 85)',
-                lineTension: 0,
+                borderColor: '#00BCD4',
+                pointBackgroundColor: '#00BCD4',
+                lineTension: 0.1,
+                borderWidth: 2,
+                pointRadius: 1,
+                pointHoverRadius: 2,
                 // data: [5, 10, 27, 25, 28, 4, 20, 3, 10, 20, 10, 15],
                 data: [1, 2, 0, 0, 1, 3, 3, 1, 2, 6, 1, 2],
             }]
@@ -346,15 +379,21 @@ function createTotCatUseChart(ctx) {
                 //         return data.datasets[tooltipItem.datasetIndex].label +': ' + tooltipItem.yLabel + '%';
                 //     }
                 // },
+                mode: 'point',
+                // intersect: false,
                 // enabled: false
             },
             scales: {
                 yAxes: [{
                     // display: false,
                     gridLines: {
-                        color: 'rgba(255, 255, 255, 0.3)',
-                        lineWidth: 2,
-                        drawBorder: false
+                        color: 'rgba(0, 0, 0, 0.2)',
+                        // lineWidth: 2,
+                        // drawBorder: true,
+                        // display: false
+                        display: true,
+                        drawBorder: true,
+                        drawOnChartArea: false,
                     },
                     ticks: {
                         beginAtZero: true,
@@ -369,9 +408,14 @@ function createTotCatUseChart(ctx) {
                 }],
                 xAxes: [{
                     gridLines: {
-                        // color: 'rgba(255, 255, 255, 0.3)',
-                        lineWidth: 2,
-                        drawBorder: false
+                        color: 'rgba(0, 0, 0, 0.2)',
+                        // lineWidth: 2,
+                        // drawBorder: true,
+                        // drawOnChartArea: false,
+                        // display: true,
+                        display: true,
+                        drawBorder: true,
+                        drawOnChartArea: false,
                     },
                     ticks: {
                         // display: false
@@ -391,12 +435,13 @@ function createAppCatUseChart(ctx) {
 
         // The data for our dataset
         data: {
+            // labels: ["Flipkart", "Amazon", "Snapdeal", "Ebay", "Myntra", "Jabong", "Shopclues", "Rest"],
             labels: ["Flipkart", "Amazon", "Snapdeal", "Ebay", "Myntra", "Jabong", "Shopclues", "Rest"],
             datasets: [{
                 label: "Transactions",
-                backgroundColor: ['rgb(118, 194, 175)', 'rgb(141, 106, 159)', 'rgb(8, 146, 165)', 'rgb(194, 249, 112)', 'rgb(7, 190, 184)', 'rgb(238, 96, 85)', 'rgb(173, 215, 246)', 'rgb(232, 141, 103)'],
+                backgroundColor: ['#00838F', '#0097A7', '#00ACC1', '#00BCD4', '#26C6DA', '#4DD0E1', '#80DEEA', '#B2EBF2'],
                 borderColor: '#fff',
-                borderWidth: 1,
+                borderWidth: 0,
                 lineTension: 0,
                 data: [22, 20, 14, 12, 9, 8, 6, 9],
             }]
@@ -470,9 +515,9 @@ function createGroCatUseChart(ctx) {
             labels: ["BigBasket", "Grofers", "Amazon", "Spencers", "RelianceSmart", "Rest"],
             datasets: [{
                 label: "Transactions",
-                backgroundColor: ['rgb(173, 215, 246)', 'rgb(238, 96, 85)', 'rgb(141, 106, 159)', 'rgb(194, 249, 112)', 'rgb(7, 190, 184)', 'rgb(232, 141, 103)'],
+                backgroundColor: ['#00838F', '#0097A7', '#00ACC1', '#00BCD4', '#26C6DA', '#4DD0E1'],
                 borderColor: '#fff',
-                borderWidth: 1,
+                borderWidth: 0,
                 lineTension: 0,
                 data: [32, 30, 20, 9, 6, 3],
             }]
@@ -539,7 +584,7 @@ function createGroCatUseChart(ctx) {
 function createAppCatBarChart(ctx) {
     var chart = new Chart(ctx, {
         // The type of chart we want to create
-        type: 'bar',
+        type: 'horizontalBar',
 
         // The data for our dataset
         data: {
@@ -547,7 +592,7 @@ function createAppCatBarChart(ctx) {
             datasets: [{
                 label: '9am-12pm',
                 data: [100, 120, 90, 110, 330, 620, 740],
-                backgroundColor: 'rgb(118, 194, 175)',
+                backgroundColor: '#00838F',
                 borderColor: 'rgba(118, 194, 175, 0)',
                 // hoverBackgroundColor: 'rgba(210, 210, 210, 1)',
                 // hoverBorderColor: 'rgba(210, 210, 210, 1)',
@@ -556,7 +601,7 @@ function createAppCatBarChart(ctx) {
             {
                 label: '12pm-3pm',
                 data: [250, 200, 230, 280, 400, 900, 970],
-                backgroundColor: 'rgb(173, 215, 246)',
+                backgroundColor: '#0097A7',
                 borderColor: 'rgba(173, 215, 246, 0)',
                 // hoverBackgroundColor: 'rgba(210, 210, 210, 1)',
                 // hoverBorderColor: 'rgba(210, 210, 210, 1)',
@@ -565,7 +610,7 @@ function createAppCatBarChart(ctx) {
             {
                 label: '3pm-6pm',
                 data: [300, 230, 330, 290, 500, 1200, 1270],
-                backgroundColor: 'rgb(141, 106, 159)',
+                backgroundColor: '#00ACC1',
                 borderColor: 'rgba(141, 106, 159, 0)',
                 // hoverBackgroundColor: 'rgba(210, 210, 210, 1)',
                 // hoverBorderColor: 'rgba(210, 210, 210, 1)',
@@ -574,7 +619,7 @@ function createAppCatBarChart(ctx) {
             {
                 label: '6pm-9pm',
                 data: [510, 450, 650, 500, 1200, 1510, 1500],
-                backgroundColor: 'rgb(8, 146, 165)',
+                backgroundColor: '#00BCD4',
                 borderColor: 'rgba(8, 146, 165, 0)',
                 // hoverBackgroundColor: 'rgba(210, 210, 210, 1)',
                 // hoverBorderColor: 'rgba(210, 210, 210, 1)',
@@ -583,7 +628,7 @@ function createAppCatBarChart(ctx) {
             {
                 label: '9pm-12am',
                 data: [520, 470, 610, 450, 900, 1150, 990],
-                backgroundColor: 'rgb(7, 190, 184)',
+                backgroundColor: '#26C6DA',
                 borderColor: 'rgba(7, 190, 184, 0)',
                 // hoverBackgroundColor: 'rgba(210, 210, 210, 1)',
                 // hoverBorderColor: 'rgba(210, 210, 210, 1)',
@@ -592,7 +637,7 @@ function createAppCatBarChart(ctx) {
             {
                 label: '12am-3am',
                 data: [200, 180, 250, 150, 500, 750, 600],
-                backgroundColor: 'rgb(238, 96, 85)',
+                backgroundColor: '#4DD0E1',
                 borderColor: 'rgba(238, 96, 85, 0)',
                 // hoverBackgroundColor: 'rgba(210, 210, 210, 1)',
                 // hoverBorderColor: 'rgba(210, 210, 210, 1)',
@@ -601,7 +646,7 @@ function createAppCatBarChart(ctx) {
             {
                 label: '3am-6am',
                 data: [100, 80, 120, 150, 320, 400, 230],
-                backgroundColor: 'rgb(194, 249, 112)',
+                backgroundColor: '#80DEEA',
                 borderColor: 'rgba(194, 249, 112, 0)',
                 // hoverBackgroundColor: 'rgba(210, 210, 210, 1)',
                 // hoverBorderColor: 'rgba(210, 210, 210, 1)',
@@ -610,7 +655,7 @@ function createAppCatBarChart(ctx) {
             {
                 label: '6am-9pm',
                 data: [20, 40, 10, 20, 60, 150, 130],
-                backgroundColor: 'rgb(232, 141, 103)',
+                backgroundColor: '#B2EBF2',
                 borderColor: 'rgba(232, 141, 103, 0)',
                 // hoverBackgroundColor: 'rgba(210, 210, 210, 1)',
                 // hoverBorderColor: 'rgba(210, 210, 210, 1)',
@@ -682,7 +727,7 @@ function createAppCatBarChart(ctx) {
 function createGroCatBarChart(ctx) {
     var chart = new Chart(ctx, {
         // The type of chart we want to create
-        type: 'bar',
+        type: 'horizontalBar',
 
         // The data for our dataset
         data: {
@@ -690,7 +735,7 @@ function createGroCatBarChart(ctx) {
             datasets: [{
                 label: '9am-12pm',
                 data: [900, 920, 1000, 860, 800, 1000, 1080],
-                backgroundColor: 'rgb(118, 194, 175)',
+                backgroundColor: '#00838F',
                 borderColor: 'rgba(118, 194, 175, 0)',
                 // hoverBackgroundColor: 'rgba(210, 210, 210, 1)',
                 // hoverBorderColor: 'rgba(210, 210, 210, 1)',
@@ -699,7 +744,7 @@ function createGroCatBarChart(ctx) {
             {
                 label: '12pm-3pm',
                 data: [880, 890, 970, 800, 790, 990, 930],
-                backgroundColor: 'rgb(173, 215, 246)',
+                backgroundColor: '#0097A7',
                 borderColor: 'rgba(173, 215, 246, 0)',
                 // hoverBackgroundColor: 'rgba(210, 210, 210, 1)',
                 // hoverBorderColor: 'rgba(210, 210, 210, 1)',
@@ -708,7 +753,7 @@ function createGroCatBarChart(ctx) {
             {
                 label: '3pm-6pm',
                 data: [800, 860, 830, 790, 850, 900, 870],
-                backgroundColor: 'rgb(141, 106, 159)',
+                backgroundColor: '#00ACC1',
                 borderColor: 'rgba(141, 106, 159, 0)',
                 // hoverBackgroundColor: 'rgba(210, 210, 210, 1)',
                 // hoverBorderColor: 'rgba(210, 210, 210, 1)',
@@ -717,7 +762,7 @@ function createGroCatBarChart(ctx) {
             {
                 label: '6pm-9pm',
                 data: [2400, 2350, 2650, 1880, 1700, 1210, 1490],
-                backgroundColor: 'rgb(8, 146, 165)',
+                backgroundColor: '#00BCD4',
                 borderColor: 'rgba(8, 146, 165, 0)',
                 // hoverBackgroundColor: 'rgba(210, 210, 210, 1)',
                 // hoverBorderColor: 'rgba(210, 210, 210, 1)',
@@ -726,7 +771,7 @@ function createGroCatBarChart(ctx) {
             {
                 label: '9pm-12am',
                 data: [820, 770, 910, 750, 700, 650, 690],
-                backgroundColor: 'rgb(7, 190, 184)',
+                backgroundColor: '#26C6DA',
                 borderColor: 'rgba(7, 190, 184, 0)',
                 // hoverBackgroundColor: 'rgba(210, 210, 210, 1)',
                 // hoverBorderColor: 'rgba(210, 210, 210, 1)',
@@ -735,7 +780,7 @@ function createGroCatBarChart(ctx) {
             {
                 label: '12am-3am',
                 data: [10, 20, 50, 0, 70, 50, 10],
-                backgroundColor: 'rgb(238, 96, 85)',
+                backgroundColor: '#4DD0E1',
                 borderColor: 'rgba(238, 96, 85, 0)',
                 // hoverBackgroundColor: 'rgba(210, 210, 210, 1)',
                 // hoverBorderColor: 'rgba(210, 210, 210, 1)',
@@ -744,7 +789,7 @@ function createGroCatBarChart(ctx) {
             {
                 label: '3am-6am',
                 data: [0, 10, 20, 0, 20, 10, 10],
-                backgroundColor: 'rgb(194, 249, 112)',
+                backgroundColor: '#80DEEA',
                 borderColor: 'rgba(194, 249, 112, 0)',
                 // hoverBackgroundColor: 'rgba(210, 210, 210, 1)',
                 // hoverBorderColor: 'rgba(210, 210, 210, 1)',
@@ -753,7 +798,7 @@ function createGroCatBarChart(ctx) {
             {
                 label: '6am-9pm',
                 data: [120, 100, 180, 100, 80, 50, 30],
-                backgroundColor: 'rgb(232, 141, 103)',
+                backgroundColor: '#B2EBF2',
                 borderColor: 'rgba(232, 141, 103, 0)',
                 // hoverBackgroundColor: 'rgba(210, 210, 210, 1)',
                 // hoverBorderColor: 'rgba(210, 210, 210, 1)',
