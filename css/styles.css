@@ -351,6 +351,12 @@ input {
     }
 }
 
+@media screen and (max-width: 991px) {
+    canvas.graph {
+        height: 225px;
+    }
+}
+
 /**********************************/
 
 /************* Footer *************/
