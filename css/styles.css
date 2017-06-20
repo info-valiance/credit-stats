@@ -297,21 +297,28 @@ input {
 }
 
 .spendings-table th {
-    color: rgb(141, 106, 159);
+    /*color: rgb(141, 106, 159);*/
+    color: rgb(125, 125, 125);
+    font-weight: normal;
 }
 
 .spendings-table td {
-    border-right: 3px solid rgba(118, 194, 175, 0.5);
-    border-bottom: 3px solid rgba(118, 194, 175, 0.5);
+    border-right: 1px solid rgba(118, 194, 175, 0.5);
+    border-bottom: 1px solid rgba(118, 194, 175, 0.5);
     -webkit-transition: 0.4s;
     transition: 0.4s
+}
+
+.spendings-table td {
+    color: #0091A5;
 }
 
 .spendings-table td:first-of-type {
     border-bottom: 0;
     border-right: 0;
-    color: rgb(141, 106, 159);
-    font-weight: bold;
+    /*color: rgb(141, 106, 159);
+    font-weight: bold;*/
+    color: rgb(125, 125, 125);
 }
 
 .spendings-table td:last-of-type {
@@ -327,7 +334,7 @@ input {
 }
 
 .spendings-select {
-    border: 3px solid rgba(118, 194, 175, 1);
+    border: 1px solid rgba(118, 194, 175, 1);
     border-radius: 3px;
     margin-left: 5px;
 }
@@ -337,14 +344,16 @@ input {
     display: none;
 }
 
-.max-spend {
+td.max-spend {
     font-weight: bold;
-    color: rgb(232, 141, 103);
+    /*color: rgb(232, 141, 103);*/
+    color: #00838F;
 }
 
-.min-spend {
+td.min-spend {
     font-weight: bold;
-    color: rgb(173, 215, 246);
+    /*color: rgb(173, 215, 246);*/
+    color: #80DEEA;
 }
 
 @media screen and (min-width: 1201px) {

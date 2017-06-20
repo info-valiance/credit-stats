@@ -31,13 +31,6 @@ $(document).ready(function () {
     $('.spendings-select').on('change', updateSpendingsTable);
 });
 
-// Update spendings table based on selected category
-function updateSpendingsTable() {
-    $('[class*="-td"]').hide();
-    var tdClass = '.' + $(this).val().toLowerCase() + '-td';
-    $(tdClass).show();
-}
-
 // Create Line chart for Total Views
 function createbgBarChart(ctx) {
     var chart = new Chart(ctx, {
