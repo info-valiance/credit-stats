@@ -3,7 +3,7 @@ $(document).ready(function () {
     $('.spendings-select').on('change', updateSpendingsTable);
 
     // Update table cells color based on their data
-    // updateTdColors();
+    updateTdColors();
 });
 
 // Update spendings table based on selected category
@@ -13,20 +13,27 @@ function updateSpendingsTable() {
     $(tdClass).show();
 }
 
-// // Update table cells color based on their data
-// function updateTdColors() {
-//     var td = $('[class*="-td"]');
-//     for(var i = 0; i < td.length; i++) {
-//         if(parseInt($(td[i]).text()) <= 5) {
-//             $(td[i]).css('color', '#80DEEA');
-//         } else if(parseInt($(td[i]).text()) <= 10) {
-//             $(td[i]).css('color', '#26C6DA');
-//         } else if(parseInt($(td[i]).text()) <= 15) {
-//             $(td[i]).css('color', '#00ACC1');
-//         } else if(parseInt($(td[i]).text()) <= 20) {
-//             $(td[i]).css('color', '#0097A7');
-//         } else if(parseInt($(td[i]).text()) <= 25) {
-//             $(td[i]).css('color', '#00838F');
-//         }
-//     }
-// }
+// Update table cells color based on their data
+function updateTdColors() {
+    var td = $('.data-td');
+    for(var i = 0; i < td.length; i++) {
+        if($(td[i]).data('percent') <= 1) {
+            // console.log($(td[i]));
+            $(td[i]).css('background', '#B2EBF2')
+        } else if($(td[i]).data('percent') == 2) {
+            $(td[i]).css('background', '#80DEEA')
+        } else if($(td[i]).data('percent') == 3) {
+            $(td[i]).css('background', '#4DD0E1')
+        } else if($(td[i]).data('percent') <= 6) {
+            $(td[i]).css('background', '#26C6DA')
+        } else if($(td[i]).data('percent') <= 8) {
+            $(td[i]).css('background', '#00BCD4')
+        } else if($(td[i]).data('percent') <= 12) {
+            $(td[i]).css('background', '#00ACC1')
+        } else if($(td[i]).data('percent') <= 18) {
+            $(td[i]).css('background', '#0097A7')
+        } else if($(td[i]).data('percent') > 19) {
+            $(td[i]).css('background', '#00838F')
+        }
+    }
+}

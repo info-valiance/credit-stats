@@ -300,17 +300,20 @@ input {
     /*color: rgb(141, 106, 159);*/
     color: rgb(125, 125, 125);
     font-weight: normal;
+    padding: 1px;
+    text-align: center;
 }
 
 .spendings-table td {
-    border-right: 1px solid rgba(118, 194, 175, 0.5);
-    border-bottom: 1px solid rgba(118, 194, 175, 0.5);
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
     -webkit-transition: 0.4s;
     transition: 0.4s
 }
 
 .spendings-table td {
     color: #0091A5;
+    padding: 3px;
 }
 
 .spendings-table td:first-of-type {
