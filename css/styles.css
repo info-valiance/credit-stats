@@ -17,7 +17,8 @@ body {
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     position: relative;
-    padding-top: 120px;
+    /*padding-top: 120px;*/
+    /*padding-top: 10px;*/
 }
 
 html,
@@ -103,7 +104,7 @@ input {
 /**********************************/
 
 /******* Background Banner ********/
-.background-banner {
+/*.background-banner {
     top: 0;
     left: 0;
     position: absolute;
@@ -141,11 +142,22 @@ input {
     100% {
         opacity: 1;
     }
-}
+}*/
 
 /**********************************/
 
 /************** Main **************/
+@media screen and (min-width: 1400px) {
+    body {
+        padding-top: 10px;
+    }
+
+    .container-1 {
+        width: 1400px;
+        margin: 0 auto;
+    }
+}
+
 .main {
     position: relative;
     -webkit-box-shadow: 0 1px 7px rgba(0, 0, 0, 0.2);
@@ -158,7 +170,14 @@ input {
 
 @media screen and (max-width: 767px) {
     .main {
-        margin: 0 15px;
+        /*margin: 0 15px;*/
+    }
+}
+
+@media screen and (max-width: 1399px) {
+    .main {
+        -webkit-box-shadow: none;
+        box-shadow: none;
     }
 }
 
