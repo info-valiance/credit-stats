@@ -174,7 +174,7 @@ input {
     }
 }
 
-@media screen and (max-width: 1399px) {
+@media screen and (max-width: 1500px) {
     .main {
         -webkit-box-shadow: none;
         box-shadow: none;
